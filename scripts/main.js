@@ -1,10 +1,10 @@
 $(document).ready(function(){
-	$(".main-slider__list").slick({
+	$(".main-slider__list").slick({		
+		autoplay: true,
+		autoplaySpeed: 3000,
 		slidesToShow: 1,
 		dots: true,
 		speed: 1000,
-		autoplay: true,
-		autoplaySpeed: 3000,
 		arrows: false
 	})
 });
