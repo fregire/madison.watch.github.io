@@ -6,5 +6,9 @@ $(document).ready(function(){
 		dots: true,
 		speed: 1000,
 		arrows: false
+	});
+
+	$(".about__content .content__text").click(function(){
+		$(this).toggleClass("content__text--expanded");
 	})
 });

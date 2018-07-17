@@ -329,6 +329,42 @@ footer,
   max-width: 690px;
   margin: 0 auto;
 }
+.about__content .content__text {
+  position: relative;
+  max-height: 120px;
+  overflow: hidden;
+  -webkit-transition: all 600ms;
+  -o-transition: all 600ms;
+  transition: all 600ms;
+}
+.about__content .content__text--expanded {
+  max-height: 2000px;
+}
+.about__content .content__text:hover {
+  cursor: pointer;
+}
+.about__content .content__text:hover:after {
+  -webkit-transform: scaleX(0);
+  -ms-transform: scaleX(0);
+      transform: scaleX(0);
+}
+.about__content .content__text:after {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  display: block;
+  content: "";
+  width: 65%;
+  height: 24px;
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0)), color-stop(80%, #f4f4f4), to(#f4f4f4));
+  background-image: -webkit-linear-gradient(left, rgba(255, 255, 255, 0), #f4f4f4 80%, #f4f4f4);
+  background-image: -o-linear-gradient(left, rgba(255, 255, 255, 0), #f4f4f4 80%, #f4f4f4);
+  background-image: linear-gradient(90deg, rgba(255, 255, 255, 0), #f4f4f4 80%, #f4f4f4);
+  -webkit-transform-origin: right;
+  -webkit-transition: all 400ms;
+  -o-transition: all 400ms;
+  transition: all 400ms;
+}
 /* Block - features */
 .features {
   background-color: #d7d7d7;
