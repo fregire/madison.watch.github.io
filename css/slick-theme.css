@@ -103,10 +103,7 @@
 }
 
 /* Dots */
-.slick-dotted.slick-slider
-{
-    margin-bottom: 30px;
-}
+
 
 .slick-dots
 {
@@ -163,27 +160,6 @@
 .slick-dots li button:focus:before
 {
     opacity: 1;
-}
-.slick-dots li button:before
-{
-    content: "";
-    font-size: 6px;
-    line-height: 20px;
-
-    position: absolute;
-    top: 0;
-    left: 0;
-
-    width: 20px;
-    height: 20px;
-
-    text-align: center;
-
-    opacity: .25;
-    color: black;
-
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
 }
 .slick-dots li.slick-active button:before
 {

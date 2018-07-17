@@ -18,7 +18,15 @@ body {
   color: #787878;
   line-height: 1.5;
   word-wrap: break-word;
-  background-color: #f4f4f4;
+  background-image: url(../img/page_bg.jpg);
+  background-size: 100%;
+}
+section,
+header,
+footer,
+.bg-line {
+  max-width: 1260px;
+  margin: 0 auto;
 }
 .visually-hidden {
   position: absolute;
@@ -251,6 +259,7 @@ body {
 /* Block - main-slider */
 .main-slider {
   color: #fff;
+  background-color: #f4f4f4;
 }
 .main-slider__list {
   max-width: 1200px;
@@ -313,6 +322,9 @@ body {
   font-family: "Montserrat", Arial, sans-serif;
 }
 /* Block - about */
+.about {
+  background-color: #f4f4f4;
+}
 .about__content {
   max-width: 690px;
   margin: 0 auto;
@@ -431,6 +443,9 @@ body {
   margin-top: 20px;
 }
 /* Block - location */
+.location {
+  background-color: #f4f4f4;
+}
 .location__inner {
   max-width: 1200px;
   margin: 0 auto;
