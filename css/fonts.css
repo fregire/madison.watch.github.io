@@ -1,0 +1,48 @@
+@font-face { 
+  font-family: 'Montserrat'; 
+  src: url('../fonts/montserrat-regular.woff2') format('woff2'), 
+       url('../fonts/montserrat-regular.woff') format('woff'); 
+  font-weight: normal; 
+  font-style: normal; 
+  font-display: swap;
+}
+
+/* Montserrat Medium - 500 */
+@font-face { 
+  font-family: 'Montserrat'; 
+  src: url('../fonts/montserrat-medium.woff2') format('woff2'), 
+       url('../fonts/montserrat-medium.woff') format('woff'); 
+  font-weight: 500; 
+  font-style: normal; 
+  font-display: swap;
+}
+
+/* Montserrat SemiBold - 600 */
+@font-face { 
+  font-family: 'Montserrat'; 
+  src: url('../fonts/montserrat-medium.woff2') format('woff2'), 
+       url('../fonts/montserrat-medium.woff') format('woff'); 
+  font-weight: 600; 
+  font-style: normal; 
+  font-display: swap;
+}
+
+/* MyriadPro Regular */
+@font-face { 
+  font-family: 'MyriadPro'; 
+  src: url('../fonts/myriadpro-regular.woff2') format('woff2'), 
+       url('../fonts/myriadpro-regular.woff') format('woff'); 
+  font-weight: normal; 
+  font-style: normal; 
+  font-display: swap;
+}
+
+/* OpenSans Regular */
+@font-face { 
+  font-family: 'OpenSans'; 
+  src: url('../fonts/opensans-regular.woff2') format('woff2'), 
+       url('../fonts/opensans-regular.woff') format('woff'); 
+  font-weight: normal; 
+  font-style: normal; 
+  font-display: swap;
+}
