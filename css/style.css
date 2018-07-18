@@ -541,3 +541,102 @@ footer,
 .form__submit {
   margin: 0 auto;
 }
+/* Block - slider */
+.slider {
+  position: relative;
+  padding: 50px 0;
+  background: #fff;
+  overflow: hidden;
+}
+.slider__inner {
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  -webkit-transition: all 100ms;
+  -o-transition: all 100ms;
+  transition: all 100ms;
+}
+.slider__item {
+  -webkit-box-sizing: unset;
+          box-sizing: unset;
+  width: 130px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  padding: 0 35px;
+  text-align: center;
+  -webkit-transition: all 300ms;
+  -o-transition: all 300ms;
+  transition: all 300ms;
+}
+.slider__item:hover {
+  cursor: pointer;
+  -webkit-transform: scale(1.5);
+      -ms-transform: scale(1.5);
+          transform: scale(1.5);
+}
+.slider__item--active {
+  color: red;
+}
+.slider__item--bord {
+  -webkit-transform: scale(1.3);
+      -ms-transform: scale(1.3);
+          transform: scale(1.3);
+}
+.slider__dots {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  max-width: 900px;
+  margin: 50px auto;
+}
+.slider__dot {
+  width: 8px;
+  height: 8px;
+  margin: 0 40px;
+  background: rgba(156, 156, 156, 0.5);
+  border-radius: 50%;
+  cursor: pointer;
+  -webkit-box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
+          box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
+  -webkit-transition: -webkit-transform 600ms;
+  transition: -webkit-transform 600ms;
+  -o-transition: transform 600ms;
+  transition: transform 600ms;
+  transition: transform 600ms, -webkit-transform 600ms;
+}
+.slider__dot--active {
+  -webkit-transform: scale(1.8);
+      -ms-transform: scale(1.8);
+          transform: scale(1.8);
+  background: #4bc126;
+}
+.slider__dot:hover {
+  cursor: pointer;
+  background: #4bc126;
+}
+.slider__decor {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 150px;
+  background-color: transparent;
+}
+.slider__decor--left {
+  left: 0;
+  background-image: -webkit-linear-gradient(right, rgba(252, 251, 248, 0), rgba(252, 251, 248, 0.7), #fcfbf7);
+  background-image: -o-linear-gradient(right, rgba(252, 251, 248, 0), rgba(252, 251, 248, 0.7), #fcfbf7);
+  background-image: -webkit-gradient(linear, right top, left top, from(rgba(252, 251, 248, 0)), color-stop(rgba(252, 251, 248, 0.7)), to(#fcfbf7));
+  background-image: linear-gradient(to left, rgba(252, 251, 248, 0), rgba(252, 251, 248, 0.7), #fcfbf7);
+}
+.slider__decor--right {
+  right: 0;
+  background-image: -webkit-linear-gradient(left, rgba(252, 251, 248, 0), rgba(252, 251, 248, 0.7), #fcfbf7);
+  background-image: -o-linear-gradient(left, rgba(252, 251, 248, 0), rgba(252, 251, 248, 0.7), #fcfbf7);
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(252, 251, 248, 0)), color-stop(rgba(252, 251, 248, 0.7)), to(#fcfbf7));
+  background-image: linear-gradient(to right, rgba(252, 251, 248, 0), rgba(252, 251, 248, 0.7), #fcfbf7);
+}
