@@ -17,8 +17,7 @@ body {
   color: #787878;
   line-height: 1.5;
   word-wrap: break-word;
-  background-image: url(../img/page_bg.jpg);
-  background-size: 100%;
+  background-image: url(../img/page_bg.png);
 }
 section,
 header,
