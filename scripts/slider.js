@@ -1,8 +1,6 @@
-var innerSlider = document.querySelector(".slider__inner");
-var slider = document.querySelector(".slider");
-var dotsContainer = document.querySelector(".slider__dots");
-var sliderItems = document.querySelectorAll(".slider__item");
-var dots = document.querySelectorAll(".slider__dot");
+var innerSlider = document.querySelector(".tabs__links");
+var slider = document.querySelector(".tabs__slider");
+var sliderItems = document.querySelectorAll(".tabs__link");
 var ITEM_MARGIN = 70;
 var shiftCoords;
 
@@ -84,11 +82,11 @@ function onSliderMouseMove(e){
       shiftCoords -= 10;
   }
 
-  if(shiftCoords >= 500){
-  	shiftCoords = 500
+  if(shiftCoords >= 0){
+  	shiftCoords = 0;
   }
-  if(shiftCoords <= -200){
-  	shiftCoords = -200;
+  if(shiftCoords <= -600){
+  	shiftCoords = -600;
   }
 
   oldX = e.pageX;
