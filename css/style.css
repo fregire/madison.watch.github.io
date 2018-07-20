@@ -462,6 +462,25 @@ footer,
   width: 25%;
   height: 255px;
   overflow: hidden;
+  -webkit-transition: all 1000ms;
+  -o-transition: all 1000ms;
+  transition: all 1000ms;
+}
+.projects__item--out-of-range:nth-child(4n),
+.projects__item--out-of-range:nth-child(4n - 1),
+.projects__item--out-of-range:nth-child(4n - 2),
+.projects__item--out-of-range:nth-child(4n - 3) {
+  -webkit-transform: translate(0, 20px);
+      -ms-transform: translate(0, 20px);
+          transform: translate(0, 20px);
+}
+.projects__item--out-of-range-from-bottom:nth-child(4n),
+.projects__item--out-of-range-from-bottom:nth-child(4n - 1),
+.projects__item--out-of-range-from-bottom:nth-child(4n - 2),
+.projects__item--out-of-range-from-bottom:nth-child(4n - 3) {
+  -webkit-transform: translate(0, 10px);
+      -ms-transform: translate(0, 10px);
+          transform: translate(0, 10px);
 }
 .projects__work {
   display: block;

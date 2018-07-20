@@ -14,20 +14,49 @@ $(document).ready(function(){
 		$(this).toggleClass("content__text--expanded");
 	});
 
-	// var isVisibleTop = function(elem){
-	// 	var coords = elem.getBoundingClientRect();
-	// 	var windowHeight = document.documentElement.clientHeight;
+	var windowHeight = document.documentElement.clientHeight;
 
-	// 	var topVisible = coords.top > 400 && coords.top < windowHeight;
+	var isVisibleFromTop = function(elem){
+		var coords = elem.getBoundingClientRect();
+		
+		var topVisible = coords.top < 700 && coords.top < windowHeight;
 
-	// 	return topVisible;
-	// }
+		return topVisible;
+	}
 
-	// var example = document.querySelector(".projects__item");
+	var isVisibleFromBottom = function(elem){
+		var coords = elem.getBoundingClientRect();
 
-	// window.addEventListener("scroll", function(){
-	// 	if(isVisible(example)){
-	// 		alert("yes");
-	// 	}
-	// });
+		var bottomVisible = coords.bottom < 20  && coords.bottom < windowHeight;
+
+		return bottomVisible;
+	}
+
+	var projects = document.querySelectorAll(".projects__item");
+	var scrollCoords = 0;
+
+	window.addEventListener("scroll", function(){
+		var vectorLength = document.documentElement.scrollTop - scrollCoords;
+		scrollCoords = document.documentElement.scrollTop;
+
+		if(vectorLength > 0){
+			for(var i = 0; i < projects.length; i++){
+				if(isVisibleFromTop(projects[i])){
+					projects[i].classList.remove("projects__item--out-of-range", "projects__item--out-of-range-from-bottom");
+				} else {
+					projects[i].classList.remove("projects__item--out-of-range", "projects__item--out-of-range-from-bottom");
+					projects[i].classList.add("projects__item--out-of-range");
+				}
+			}
+		} else {
+			for(var i = 0; i < projects.length; i++){
+				if(isVisibleFromBottom(projects[i])){
+					projects[i].classList.remove("projects__item--out-of-range-from-bottom", "projects__item--out-of-range");
+				} else {
+					projects[i].classList.remove("projects__item--out-of-range", "projects__item--out-of-range-from-bottom");
+					projects[i].classList.add("projects__item--out-of-range-from-bottom");
+				}
+			}
+		}
+	});
 });
