@@ -307,6 +307,38 @@ footer,
 	background-image: url(../img/line_bg.jpg);
 	background-size: cover;
 }
+
+/* Block - slider-arrow */
+.slider-arrow {
+	width: 24px;
+	height: 24px;
+
+
+	background-color: #3967b0;
+	border-radius: 50%;
+	border: 2px solid #fff;
+	background-position-y: center;
+	background-repeat: no-repeat;
+	background-size: 6px;
+	outline: none;
+
+	z-index: 10;
+}
+
+.slider-arrow:hover {
+	cursor: pointer;
+	background-color: #ea4e85;
+}
+
+.slider-arrow--prev {
+	background-image: url(../img/arrow-icon_prev.png);
+	background-position-x: 44%;
+}
+
+.slider-arrow--next {
+	background-image: url(../img/arrow-icon_next.png);
+	background-position-x: center;
+}
 /*** Конец Global Styles ***/
 
 /** Страница - Главная **/
@@ -319,6 +351,7 @@ footer,
 }
 
 .main-slider__list {
+	position: relative;
 	max-width: 1200px;
 	padding: 5px 15px;
 	margin: 0 auto;
@@ -396,6 +429,21 @@ footer,
 .main-slider__headline,
 .main-slider__btn {
 	font-family: "Montserrat", Arial, sans-serif;
+}
+
+
+.main-slider__arrow {
+	position: absolute;
+	top: 50%;
+	transform: translate(0, -50%);
+}
+
+.main-slider__arrow--prev {
+	left: 0px;
+}
+
+.main-slider__arrow--next {
+	right: 0px;
 }
 
 /* Block - about */
