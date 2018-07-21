@@ -949,10 +949,15 @@ footer,
 
 .tabs__content {
 	max-width: 1200px;
-	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
 	margin: 0 auto;
+
+	display: none;
+}
+
+.tabs__content--active {
+	display: flex;
 }
 
 .tabs__item {

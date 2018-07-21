@@ -817,15 +817,18 @@ footer,
 }
 .tabs__content {
   max-width: 1200px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
   margin: 0 auto;
+  display: none;
+}
+.tabs__content--active {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 .tabs__item {
   position: relative;
