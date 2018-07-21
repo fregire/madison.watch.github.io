@@ -200,16 +200,26 @@ footer,
 .social__list {
   padding: 0;
   margin-top: 10px;
-  max-width: 125px;
+  max-width: 250px;
   list-style: none;
 }
 .social__item {
+  position: relative;
   display: inline-block;
   vertical-align: top;
   margin-right: 15px;
 }
-.social__item:nth-child(3) {
-  margin-right: 0;
+.social__icon-hover {
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+}
+.social__link:hover .social__icon {
+  opacity: 0;
+}
+.social__link:hover .social__icon-hover {
+  opacity: 1;
 }
 /* Block - politic */
 .politic {
@@ -778,6 +788,13 @@ footer,
           transform: scale(1.3);
 }
 .tabs__link:hover .tabs__icon-hover {
+  opacity: 1;
+}
+.tabs__link--active {
+  color: #e83a85;
+  cursor: pointer;
+}
+.tabs__link--active .tabs__icon-hover {
   opacity: 1;
 }
 .tabs__icon {
