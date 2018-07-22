@@ -731,7 +731,7 @@ footer,
 }
 .tabs__icon {
   position: relative;
-  width: 72px;
+  max-width: 60px;
   height: 72px;
   margin: 0 auto;
 }
