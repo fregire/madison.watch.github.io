@@ -789,9 +789,9 @@ footer,
           box-shadow: 0px 1px 12.61px 0.39px rgba(0, 0, 0, 0.2);
 }
 .tabs__item:hover .tabs__pict img {
-  -webkit-transform: scale(1.2);
-      -ms-transform: scale(1.2);
-          transform: scale(1.2);
+  -webkit-transform: scale(1.1) translate(-50%, -50%);
+      -ms-transform: scale(1.1) translate(-50%, -50%);
+          transform: scale(1.1) translate(-50%, -50%);
 }
 .tabs__item:hover .tabs__text-overlay {
   opacity: 0;
@@ -811,11 +811,19 @@ footer,
   transition: all 300ms;
 }
 .tabs__pict {
+  position: relative;
   height: 260px;
   overflow: hidden;
 }
 .tabs__pict img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
   height: 100%;
+  min-height: 270px;
   -webkit-transition: all 400ms;
   -o-transition: all 400ms;
   transition: all 400ms;
