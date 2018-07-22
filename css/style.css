@@ -47,6 +47,9 @@ footer,
   text-transform: uppercase;
   color: #fff;
   outline: none;
+  -webkit-transition: all 400ms;
+  -o-transition: all 400ms;
+  transition: all 400ms;
 }
 .btn:hover {
   cursor: pointer;
@@ -370,6 +373,10 @@ footer,
   border-radius: 5px;
   border: 1px solid #9d9a99;
 }
+.main-slider__btn:hover {
+  color: #e94388;
+  border-color: #e94388;
+}
 .main-slider__headline,
 .main-slider__btn {
   font-family: "Montserrat", Arial, sans-serif;
@@ -483,12 +490,43 @@ footer,
   list-style: none;
 }
 .projects__item {
+  position: relative;
   width: 25%;
   height: 255px;
   overflow: hidden;
   -webkit-transition: all 1000ms;
   -o-transition: all 1000ms;
   transition: all 1000ms;
+}
+.projects__item:hover .projects__overlay {
+  opacity: 1;
+}
+.projects__overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.3);
+  opacity: 0;
+  -webkit-transition: all 400ms;
+  -o-transition: all 400ms;
+  transition: all 400ms;
+}
+.projects__overlay:after {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 40px;
+  height: 25px;
+  display: block;
+  content: "";
+  background-image: url(../img/eye_icon.png);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .projects__item--out-of-range:nth-child(4n),
 .projects__item--out-of-range:nth-child(4n - 1),
