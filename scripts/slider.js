@@ -91,42 +91,6 @@
 		});
 	}
 
-	var moveToNextSlide = function(){
-		if(currentSlide === links.length - 1){
-			currentSlide = -1;
-		}
-		currentSlide++;
-		clearClass(links, 'tabs__link--active');
-
-		window.slideCoordX = links[currentSlide].getBoundingClientRect().right;
-		window.viewZoneCoordX = sliderWrapper.getBoundingClientRect().right;
-
-		links[currentSlide].classList.add("tabs__link--active");
-
-		if(isHidden(links[currentSlide], 'next')){
-			moveToSlide(links[currentSlide], 'next');
-		}
-	}
-
-	var moveToPrevSlide = function(){
-		if(currentSlide === 0){
-			currentSlide = links.length;
-		}
-		currentSlide--;
-
-		window.slideCoordX = links[currentSlide].getBoundingClientRect().left;
-		window.viewZoneCoordX = sliderWrapper.getBoundingClientRect().left;
-
-		clearClass(links, 'tabs__link--active');
-		links[currentSlide].classList.add("tabs__link--active");
-
-		if(isHidden(links[currentSlide], 'prev')){
-			moveToSlide(links[currentSlide], 'prev');
-		}
-		console.log(links[currentSlide]);
-	}
-
-
 	sliderWrapper.addEventListener("mouseenter", onSliderMouseenter);
 
 	for(var i = 0; i < links.length; i++){
@@ -147,8 +111,4 @@
 			// }, 1000);
 		});
 	}
-
-	btnNext.addEventListener("click", moveToNextSlide);
-
-	btnPrev.addEventListener("click", moveToPrevSlide);
 })();
