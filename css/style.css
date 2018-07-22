@@ -884,9 +884,9 @@ footer,
 }
 .tabs__pict img {
   height: 100%;
-  -webkit-transition: all 200ms;
-  -o-transition: all 200ms;
-  transition: all 200ms;
+  -webkit-transition: all 400ms;
+  -o-transition: all 400ms;
+  transition: all 400ms;
 }
 .tabs__item-content {
   padding: 0 17px;

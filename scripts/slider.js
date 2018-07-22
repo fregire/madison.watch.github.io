@@ -140,11 +140,11 @@
 
 			this.classList.add("tabs__link--active");
 			document.querySelector(".tabs__content[data-cat='" + category + "']").classList.add("tabs__content--active");
-			sliderWrapper.removeEventListener("mousemove", onSliderMousemove);
+			// sliderWrapper.removeEventListener("mousemove", onSliderMousemove);
 
-			setTimeout(function(){
-				sliderWrapper.addEventListener("mousemove", onSliderMousemove);
-			}, 2000);
+			// setTimeout(function(){
+			// 	sliderWrapper.addEventListener("mousemove", onSliderMousemove);
+			// }, 1000);
 		});
 	}
 
