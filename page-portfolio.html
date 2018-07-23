@@ -21,34 +21,496 @@
 			<nav class="page-nav">
 				<h2 class="visually-hidden">Навигация по сайту</h2>
 				<ul class="page-nav__list">
-					<li class="page-nav__item">
-						<a href="#" class="page-nav__link">Услуги</a>
+					<li>
+						<a href="#">Главная</a>
 					</li>
-					<li class="page-nav__item">
-						<a href="#" class="page-nav__link">Портфолио</a>
+					<li>
+						<a href="#">Услуги</a>
 					</li>
-					<li class="page-nav__item">
-						<a href="#" class="page-nav__link">Новости</a>
+					<li class="current">
+						<a href="#">Портфолио</a>
 					</li>
-					<li class="page-nav__item">
-						<a href="#" class="page-nav__link">Статьи</a>
+					<li>
+						<a href="#">Новости</a>
 					</li>
-					<li class="page-nav__item">
-						<a href="#" class="page-nav__link">Контакты</a>
+					<li>
+						<a href="#">Статьи</a>
+					</li>
+					<li>
+						<a href="#">Контакты</a>
 					</li>
 				</ul>
 			</nav>
 			<div class="page-navbar__right-side">
 				<select name="lang" id="" class="page-navbar__lang lang">
-					<option value="EN" class="lang__item">EN</option>
-					<option value="RU" class="lang__item">RU</option>
+					<option value="EN" class="lang__item">RU</option>
+					<option value="RU" class="lang__item">EN</option>
 				</select>
 				<address class="phone">+7(495)374-79-72</address>
 			</div>
 		</div>
 	</header>
 	<main class="page-main">
-		<div class="bg-line"></div>
+		<section class="tabs">
+			<div class="bg-line"></div>
+			<div class="tabs__inner">
+				<div class="category js-category">
+					<div class="category__inner">
+						<ul class="category__items">
+							<li class="category__item" data-cat="1">
+								<div class="category__icon">
+									<img src="img/alcohol.png" alt="">
+									<img class="category__icon-hover" src="img/alcohol_hover.png" alt="">
+								</div>
+								<p class="category__name">Алкоголь</p>		
+							</li>
+							<li class="category__item" data-cat="3">
+								<div class="category__icon">
+									<img src="img/food.png" alt="">
+									<img class="category__icon-hover" src="img/food_hover.png" alt="">
+								</div>
+								<p class="category__name">Продукты питания и напитки</p>
+							</li>		
+							<li class="category__item" data-cat="8">
+								<div class="category__icon">
+									<img src="img/cream.png" alt="">
+									<img class="category__icon-hover" src="img/cream_hover.png" alt="">
+								</div>
+								<p class="category__name">Уход за телом</p>			
+							</li>
+							<li class="category__item" data-cat="5">
+								<div class="category__icon">
+									<img src="img/cakes.png" alt="">
+									<img class="category__icon-hover" src="img/cakes_hover.png" alt="">
+								</div>
+								<p class="category__name">Кондитерские изделия</p>	
+							</li>
+							<li class="category__item" data-cat="10">
+								<div class="category__icon">
+									<img src="img/assortment.png" alt="">
+								</div>
+								<p class="category__name">Все работы</p>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<ul class="tabs__content tabs__content--active" data-cat="1">
+					<li class="tabs__item">
+						<div class="tabs__pict">
+							<img src="img/1.png" alt="">
+						</div>
+						<div class="tabs__item-content">
+							<h3 class="tabs__headline">Елоховское Подворье 1</h3>
+							<p class="tabs__text">При создании новой торговой марки следовало решить основную задачу – создать новый образ церковного вина</p>
+						</div>
+						<div class="tabs__text-overlay"></div>
+					</li>
+					<li class="tabs__item">
+						<div class="tabs__pict">
+							<img src="img/2.png" alt="">
+						</div>
+						<div class="tabs__item-content">
+							<h3 class="tabs__headline">Елоховское Подворье</h3>
+							<p class="tabs__text">При создании новой торговой марки следовало решить основную задачу – создать новый образ церковного вина</p>
+						</div>
+						<div class="tabs__text-overlay"></div>
+					</li>
+					<li class="tabs__item">
+						<div class="tabs__pict">
+							<img src="img/3.png" alt="">
+						</div>
+						<div class="tabs__item-content">
+							<h3 class="tabs__headline">Елоховское Подворье</h3>
+							<p class="tabs__text">При создании новой торговой марки следовало решить основную задачу – создать новый образ церковного вина</p>
+						</div>
+						<div class="tabs__text-overlay"></div>
+					</li>
+
+					<li class="tabs__item">
+						<div class="tabs__pict">
+							<img src="img/6.png" alt="">
+						</div>
+						<div class="tabs__item-content">
+							<h3 class="tabs__headline">Елоховское Подворье</h3>
+							<p class="tabs__text">При создании новой торговой марки следовало решить основную задачу – создать новый образ церковного вина</p>
+						</div>
+						<div class="tabs__text-overlay"></div>
+					</li>
+					<li class="tabs__item">
+						<div class="tabs__pict">
+							<img src="img/8.png" alt="">
+						</div>
+						<div class="tabs__item-content">
+							<h3 class="tabs__headline">Елоховское Подворье</h3>
+							<p class="tabs__text">При создании новой торговой марки следовало решить основную задачу – создать новый образ церковного вина</p>
+						</div>
+						<div class="tabs__text-overlay"></div>
+					</li>
+					<li class="tabs__item">
+						<div class="tabs__pict">
+							<img src="img/10.png" alt="">
+						</div>
+						<div class="tabs__item-content">
+							<h3 class="tabs__headline">Елоховское Подворье</h3>
+							<p class="tabs__text">При создании новой торговой марки следовало решить основную задачу – создать новый образ церковного вина</p>
+						</div>
+						<div class="tabs__text-overlay"></div>
+					</li>
+					<li class="tabs__item">
+						<div class="tabs__pict">
+							<img src="img/14.png" alt="">
+						</div>
+						<div class="tabs__item-content">
+							<h3 class="tabs__headline">Елоховское Подворье</h3>
+							<p class="tabs__text">При создании новой торговой марки следовало решить основную задачу – создать новый образ церковного вина</p>
+						</div>
+						<div class="tabs__text-overlay"></div>
+					</li>
+					<li class="tabs__item">
+						<div class="tabs__pict">
+							<img src="img/12.png" alt="">
+						</div>
+						<div class="tabs__item-content">
+							<h3 class="tabs__headline">Елоховское Подворье</h3>
+							<p class="tabs__text">При создании новой торговой марки следовало решить основную задачу – создать новый образ церковного вина</p>
+						</div>
+						<div class="tabs__text-overlay"></div>
+					</li>
+				</ul>
+				<ul class="tabs__content" data-cat="3">
+					<li class="tabs__item">
+						<div class="tabs__pict">
+							<img src="img/3.png" alt="">
+						</div>
+						<div class="tabs__item-content">
+							<h3 class="tabs__headline">Елоховское Подворье 2</h3>
+							<p class="tabs__text">При создании новой торговой марки следовало решить основную задачу – создать новый образ церковного вина</p>
+						</div>
+						<div class="tabs__text-overlay"></div>
+					</li>
+					<li class="tabs__item">
+						<div class="tabs__pict">
+							<img src="img/4.png" alt="">
+						</div>
+						<div class="tabs__item-content">
+							<h3 class="tabs__headline">Елоховское Подворье</h3>
+							<p class="tabs__text">При создании новой торговой марки следовало решить основную задачу – создать новый образ церковного вина</p>
+						</div>
+						<div class="tabs__text-overlay"></div>
+					</li>
+					<li class="tabs__item">
+						<div class="tabs__pict">
+							<img src="img/11.png" alt="">
+						</div>
+						<div class="tabs__item-content">
+							<h3 class="tabs__headline">Елоховское Подворье</h3>
+							<p class="tabs__text">При создании новой торговой марки следовало решить основную задачу – создать новый образ церковного вина</p>
+						</div>
+						<div class="tabs__text-overlay"></div>
+					</li>
+
+					<li class="tabs__item">
+						<div class="tabs__pict">
+							<img src="img/12.png" alt="">
+						</div>
+						<div class="tabs__item-content">
+							<h3 class="tabs__headline">Елоховское Подворье</h3>
+							<p class="tabs__text">При создании новой торговой марки следовало решить основную задачу – создать новый образ церковного вина</p>
+						</div>
+						<div class="tabs__text-overlay"></div>
+					</li>
+					<li class="tabs__item">
+						<div class="tabs__pict">
+							<img src="img/6.png" alt="">
+						</div>
+						<div class="tabs__item-content">
+							<h3 class="tabs__headline">Елоховское Подворье</h3>
+							<p class="tabs__text">При создании новой торговой марки следовало решить основную задачу – создать новый образ церковного вина</p>
+						</div>
+						<div class="tabs__text-overlay"></div>
+					</li>
+					<li class="tabs__item">
+						<div class="tabs__pict">
+							<img src="img/8.png" alt="">
+						</div>
+						<div class="tabs__item-content">
+							<h3 class="tabs__headline">Елоховское Подворье</h3>
+							<p class="tabs__text">При создании новой торговой марки следовало решить основную задачу – создать новый образ церковного вина</p>
+						</div>
+						<div class="tabs__text-overlay"></div>
+					</li>
+					<li class="tabs__item">
+						<div class="tabs__pict">
+							<img src="img/1.png" alt="">
+						</div>
+						<div class="tabs__item-content">
+							<h3 class="tabs__headline">Елоховское Подворье</h3>
+							<p class="tabs__text">При создании новой торговой марки следовало решить основную задачу – создать новый образ церковного вина</p>
+						</div>
+						<div class="tabs__text-overlay"></div>
+					</li>
+					<li class="tabs__item">
+						<div class="tabs__pict">
+							<img src="img/1.png" alt="">
+						</div>
+						<div class="tabs__item-content">
+							<h3 class="tabs__headline">Елоховское Подворье</h3>
+							<p class="tabs__text">При создании новой торговой марки следовало решить основную задачу – создать новый образ церковного вина</p>
+						</div>
+						<div class="tabs__text-overlay"></div>
+					</li>
+				</ul>
+				<ul class="tabs__content" data-cat="8">
+					<li class="tabs__item">
+						<div class="tabs__pict">
+							<img src="img/5.png" alt="">
+						</div>
+						<div class="tabs__item-content">
+							<h3 class="tabs__headline">Елоховское Подворье 3</h3>
+							<p class="tabs__text">При создании новой торговой марки следовало решить основную задачу – создать новый образ церковного вина</p>
+						</div>
+						<div class="tabs__text-overlay"></div>
+					</li>
+					<li class="tabs__item">
+						<div class="tabs__pict">
+							<img src="img/6.png" alt="">
+						</div>
+						<div class="tabs__item-content">
+							<h3 class="tabs__headline">Елоховское Подворье</h3>
+							<p class="tabs__text">При создании новой торговой марки следовало решить основную задачу – создать новый образ церковного вина</p>
+						</div>
+						<div class="tabs__text-overlay"></div>
+					</li>
+					<li class="tabs__item">
+						<div class="tabs__pict">
+							<img src="img/13.png" alt="">
+						</div>
+						<div class="tabs__item-content">
+							<h3 class="tabs__headline">Елоховское Подворье</h3>
+							<p class="tabs__text">При создании новой торговой марки следовало решить основную задачу – создать новый образ церковного вина</p>
+						</div>
+						<div class="tabs__text-overlay"></div>
+					</li>
+
+					<li class="tabs__item">
+						<div class="tabs__pict">
+							<img src="img/14.png" alt="">
+						</div>
+						<div class="tabs__item-content">
+							<h3 class="tabs__headline">Елоховское Подворье</h3>
+							<p class="tabs__text">При создании новой торговой марки следовало решить основную задачу – создать новый образ церковного вина</p>
+						</div>
+						<div class="tabs__text-overlay"></div>
+					</li>
+					<li class="tabs__item">
+						<div class="tabs__pict">
+							<img src="img/1.png" alt="">
+						</div>
+						<div class="tabs__item-content">
+							<h3 class="tabs__headline">Елоховское Подворье</h3>
+							<p class="tabs__text">При создании новой торговой марки следовало решить основную задачу – создать новый образ церковного вина</p>
+						</div>
+						<div class="tabs__text-overlay"></div>
+					</li>
+					<li class="tabs__item">
+						<div class="tabs__pict">
+							<img src="img/15.png" alt="">
+						</div>
+						<div class="tabs__item-content">
+							<h3 class="tabs__headline">Елоховское Подворье</h3>
+							<p class="tabs__text">При создании новой торговой марки следовало решить основную задачу – создать новый образ церковного вина</p>
+						</div>
+						<div class="tabs__text-overlay"></div>
+					</li>
+					<li class="tabs__item">
+						<div class="tabs__pict">
+							<img src="img/8.png" alt="">
+						</div>
+						<div class="tabs__item-content">
+							<h3 class="tabs__headline">Елоховское Подворье</h3>
+							<p class="tabs__text">При создании новой торговой марки следовало решить основную задачу – создать новый образ церковного вина</p>
+						</div>
+						<div class="tabs__text-overlay"></div>
+					</li>
+					<li class="tabs__item">
+						<div class="tabs__pict">
+							<img src="img/1.png" alt="">
+						</div>
+						<div class="tabs__item-content">
+							<h3 class="tabs__headline">Елоховское Подворье</h3>
+							<p class="tabs__text">При создании новой торговой марки следовало решить основную задачу – создать новый образ церковного вина</p>
+						</div>
+						<div class="tabs__text-overlay"></div>
+					</li>
+				</ul>
+				<ul class="tabs__content" data-cat="5">
+					<li class="tabs__item">
+						<div class="tabs__pict">
+							<img src="img/7.png" alt="">
+						</div>
+						<div class="tabs__item-content">
+							<h3 class="tabs__headline">Елоховское Подворье 4</h3>
+							<p class="tabs__text">При создании новой торговой марки следовало решить основную задачу – создать новый образ церковного вина</p>
+						</div>
+						<div class="tabs__text-overlay"></div>
+					</li>
+					<li class="tabs__item">
+						<div class="tabs__pict">
+							<img src="img/8.png" alt="">
+						</div>
+						<div class="tabs__item-content">
+							<h3 class="tabs__headline">Елоховское Подворье</h3>
+							<p class="tabs__text">При создании новой торговой марки следовало решить основную задачу – создать новый образ церковного вина</p>
+						</div>
+						<div class="tabs__text-overlay"></div>
+					</li>
+					<li class="tabs__item">
+						<div class="tabs__pict">
+							<img src="img/15.png" alt="">
+						</div>
+						<div class="tabs__item-content">
+							<h3 class="tabs__headline">Елоховское Подворье</h3>
+							<p class="tabs__text">При создании новой торговой марки следовало решить основную задачу – создать новый образ церковного вина</p>
+						</div>
+						<div class="tabs__text-overlay"></div>
+					</li>
+
+					<li class="tabs__item">
+						<div class="tabs__pict">
+							<img src="img/16.png" alt="">
+						</div>
+						<div class="tabs__item-content">
+							<h3 class="tabs__headline">Елоховское Подворье</h3>
+							<p class="tabs__text">При создании новой торговой марки следовало решить основную задачу – создать новый образ церковного вина</p>
+						</div>
+						<div class="tabs__text-overlay"></div>
+					</li>
+					<li class="tabs__item">
+						<div class="tabs__pict">
+							<img src="img/1.png" alt="">
+						</div>
+						<div class="tabs__item-content">
+							<h3 class="tabs__headline">Елоховское Подворье</h3>
+							<p class="tabs__text">При создании новой торговой марки следовало решить основную задачу – создать новый образ церковного вина</p>
+						</div>
+						<div class="tabs__text-overlay"></div>
+					</li>
+					<li class="tabs__item">
+						<div class="tabs__pict">
+							<img src="img/1.png" alt="">
+						</div>
+						<div class="tabs__item-content">
+							<h3 class="tabs__headline">Елоховское Подворье</h3>
+							<p class="tabs__text">При создании новой торговой марки следовало решить основную задачу – создать новый образ церковного вина</p>
+						</div>
+						<div class="tabs__text-overlay"></div>
+					</li>
+					<li class="tabs__item">
+						<div class="tabs__pict">
+							<img src="img/13.png" alt="">
+						</div>
+						<div class="tabs__item-content">
+							<h3 class="tabs__headline">Елоховское Подворье</h3>
+							<p class="tabs__text">При создании новой торговой марки следовало решить основную задачу – создать новый образ церковного вина</p>
+						</div>
+						<div class="tabs__text-overlay"></div>
+					</li>
+					<li class="tabs__item">
+						<div class="tabs__pict">
+							<img src="img/1.png" alt="">
+						</div>
+						<div class="tabs__item-content">
+							<h3 class="tabs__headline">Елоховское Подворье</h3>
+							<p class="tabs__text">При создании новой торговой марки следовало решить основную задачу – создать новый образ церковного вина</p>
+						</div>
+						<div class="tabs__text-overlay"></div>
+					</li>
+				</ul>
+				<ul class="tabs__content" data-cat="10">
+					<li class="tabs__item">
+						<div class="tabs__pict">
+							<img src="img/9.png" alt="">
+						</div>
+						<div class="tabs__item-content">
+							<h3 class="tabs__headline">Елоховское Подворье 5</h3>
+							<p class="tabs__text">При создании новой торговой марки следовало решить основную задачу – создать новый образ церковного вина</p>
+						</div>
+						<div class="tabs__text-overlay"></div>
+					</li>
+					<li class="tabs__item">
+						<div class="tabs__pict">
+							<img src="img/10.png" alt="">
+						</div>
+						<div class="tabs__item-content">
+							<h3 class="tabs__headline">Елоховское Подворье</h3>
+							<p class="tabs__text">При создании новой торговой марки следовало решить основную задачу – создать новый образ церковного вина</p>
+						</div>
+						<div class="tabs__text-overlay"></div>
+					</li>
+					<li class="tabs__item">
+						<div class="tabs__pict">
+							<img src="img/1.png" alt="">
+						</div>
+						<div class="tabs__item-content">
+							<h3 class="tabs__headline">Елоховское Подворье</h3>
+							<p class="tabs__text">При создании новой торговой марки следовало решить основную задачу – создать новый образ церковного вина</p>
+						</div>
+						<div class="tabs__text-overlay"></div>
+					</li>
+
+					<li class="tabs__item">
+						<div class="tabs__pict">
+							<img src="img/1.png" alt="">
+						</div>
+						<div class="tabs__item-content">
+							<h3 class="tabs__headline">Елоховское Подворье</h3>
+							<p class="tabs__text">При создании новой торговой марки следовало решить основную задачу – создать новый образ церковного вина</p>
+						</div>
+						<div class="tabs__text-overlay"></div>
+					</li>
+					<li class="tabs__item">
+						<div class="tabs__pict">
+							<img src="img/1.png" alt="">
+						</div>
+						<div class="tabs__item-content">
+							<h3 class="tabs__headline">Елоховское Подворье</h3>
+							<p class="tabs__text">При создании новой торговой марки следовало решить основную задачу – создать новый образ церковного вина</p>
+						</div>
+						<div class="tabs__text-overlay"></div>
+					</li>
+					<li class="tabs__item">
+						<div class="tabs__pict">
+							<img src="img/1.png" alt="">
+						</div>
+						<div class="tabs__item-content">
+							<h3 class="tabs__headline">Елоховское Подворье</h3>
+							<p class="tabs__text">При создании новой торговой марки следовало решить основную задачу – создать новый образ церковного вина</p>
+						</div>
+						<div class="tabs__text-overlay"></div>
+					</li>
+					<li class="tabs__item">
+						<div class="tabs__pict">
+							<img src="img/1.png" alt="">
+						</div>
+						<div class="tabs__item-content">
+							<h3 class="tabs__headline">Елоховское Подворье</h3>
+							<p class="tabs__text">При создании новой торговой марки следовало решить основную задачу – создать новый образ церковного вина</p>
+						</div>
+						<div class="tabs__text-overlay"></div>
+					</li>
+					<li class="tabs__item">
+						<div class="tabs__pict">
+							<img src="img/1.png" alt="">
+						</div>
+						<div class="tabs__item-content">
+							<h3 class="tabs__headline">Елоховское Подворье</h3>
+							<p class="tabs__text">При создании новой торговой марки следовало решить основную задачу – создать новый образ церковного вина</p>
+						</div>
+						<div class="tabs__text-overlay"></div>
+					</li>
+				</ul>
+			</div>
+		</section>
 	</main>
 	<footer class="page-footer">
 		<div class="page-footer__inner">
@@ -59,20 +521,23 @@
 				<nav class="page-nav">
 					<h2 class="visually-hidden">Навигация по сайту</h2>
 					<ul class="page-nav__list">
-						<li class="page-nav__item">
-							<a href="#" class="page-nav__link">Услуги</a>
+						<li>
+							<a href="#">Главная</a>
 						</li>
-						<li class="page-nav__item">
-							<a href="#" class="page-nav__link">Портфолио</a>
+						<li>
+							<a href="#">Услуги</a>
 						</li>
-						<li class="page-nav__item">
-							<a href="#" class="page-nav__link">Новости</a>
+						<li class="current">
+							<a href="#">Портфолио</a>
 						</li>
-						<li class="page-nav__item">
-							<a href="#" class="page-nav__link">Статьи</a>
+						<li>
+							<a href="#">Новости</a>
 						</li>
-						<li class="page-nav__item">
-							<a href="#" class="page-nav__link">Контакты</a>
+						<li>
+							<a href="#">Статьи</a>
+						</li>
+						<li>
+							<a href="#">Контакты</a>
 						</li>
 					</ul>
 				</nav>
@@ -86,38 +551,38 @@
 			</div>
 			<div class="page-footer__bottom-content">
 				<div class="social">
-					<h2 class="page-footer__headline">Мы в соц сетях</h2>
+					<h2 class="page-footer__headline">Мы в соц сетях и мессенджерах</h2>
 					<ul class="social__list">
 						<li class="social__item">
 							<a href="#" class="social__link" aria-label="Соцсеть">
-								<img src="img/fb.png" alt="">
+								<img class="social__icon" src="img/facebook_icon.png" alt="">
+								<img class="social__icon-hover" src="img/facebook_icon_hover.png" alt="">
 							</a>
 						</li>
 						<li class="social__item">
 							<a href="#" class="social__link" aria-label="Соцсеть">
-								<img src="img/inst.png" alt="">
-							</a>
-						</li>
-					</ul>
-				</div>
-				<div class="social">
-					<h2 class="page-footer__headline">Мы в соц сетях</h2>
-					<ul class="social__list">
-						<li class="social__item">
-							<a href="#" class="social__link" aria-label="Соцсеть">
-								<img src="img/tg.png" alt="">
+								<img class="social__icon" src="img/instagram_icon.png" alt="">
+								<img class="social__icon-hover" src="img/instagram_icon_hover.png" alt="">
 							</a>
 						</li>
 						<li class="social__item">
 							<a href="#" class="social__link" aria-label="Соцсеть">
-								<img src="img/whatsapp.png" alt="">
+								<img class="social__icon" src="img/telegram_icon.png" alt="">
+								<img class="social__icon-hover" src="img/telegram_icon_hover.png" alt="">
 							</a>
 						</li>
 						<li class="social__item">
 							<a href="#" class="social__link" aria-label="Соцсеть">
-								<img src="img/viber.png" alt="">
+								<img class="social__icon" src="img/whatsapp_icon.png" alt="">
+								<img class="social__icon-hover" src="img/whatsapp_icon_hover.png" alt="">
 							</a>
 						</li>
+						<li class="social__item">
+							<a href="#" class="social__link" aria-label="Соцсеть">
+								<img class="social__icon" src="img/viber_icon.png" alt="">
+								<img class="social__icon-hover" src="img/viber_icon_hover.png" alt="">
+							</a>
+						</li>						
 					</ul>
 				</div>
 				<div class="politic">

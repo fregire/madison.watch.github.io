@@ -954,6 +954,10 @@ footer,
 	transform: scale(1.3);
 }
 
+.category__item:hover .category__link {
+	color: #e83a85;
+}
+
 .category__item:hover .category__icon-hover {
 	opacity: 1;
 }
@@ -972,6 +976,8 @@ footer,
 	display: block;
 	text-decoration: none;
 	color: #787878;
+
+	transition: all 400ms;
 }
 
 .category__icon {
@@ -995,4 +1001,14 @@ footer,
 	opacity: 0;
 
 	transition: opacity 400ms;
+}
+
+.category__text-icon {
+	position: absolute;
+	top: 50%;
+	left: 40%;
+	transform: translate(-50%, -50%);
+
+	font-size: 35px;
+	font-family: "Montserrat";
 }
