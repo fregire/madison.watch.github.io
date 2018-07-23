@@ -530,24 +530,41 @@ footer,
   background-repeat: no-repeat;
   background-size: cover;
 }
-.projects__item--out-of-range:nth-child(4n),
-.projects__item--out-of-range:nth-child(4n - 1),
-.projects__item--out-of-range:nth-child(4n - 2),
-.projects__item--out-of-range:nth-child(4n - 3) {
-  -webkit-transform: translate(0, 30px);
-      -ms-transform: translate(0, 30px);
-          transform: translate(0, 30px);
+.projects__item--out-of-range-before:nth-child(4n) {
+  -webkit-transform: translate3d(0, -10px, 0);
+          transform: translate3d(0, -10px, 0);
 }
-.projects__item--out-of-range-from-bottom:nth-child(4n),
-.projects__item--out-of-range-from-bottom:nth-child(4n - 1),
-.projects__item--out-of-range-from-bottom:nth-child(4n - 2),
-.projects__item--out-of-range-from-bottom:nth-child(4n - 3) {
-  -webkit-transform: translate(0, 20px);
-      -ms-transform: translate(0, 20px);
-          transform: translate(0, 20px);
+.projects__item--out-of-range-before:nth-child(4n - 1) {
+  -webkit-transform: translate3d(0, -15px, 0);
+          transform: translate3d(0, -15px, 0);
+}
+.projects__item--out-of-range-before:nth-child(4n - 2) {
+  -webkit-transform: translate3d(0, -20px, 0);
+          transform: translate3d(0, -20px, 0);
+}
+.projects__item--out-of-range-before:nth-child(4n - 3) {
+  -webkit-transform: translate3d(0, -25px, 0);
+          transform: translate3d(0, -25px, 0);
+}
+.projects__item--out-of-range-after:nth-child(4n) {
+  -webkit-transform: translate3d(0, 15px, 0);
+          transform: translate3d(0, 15px, 0);
+}
+.projects__item--out-of-range-after:nth-child(4n - 1) {
+  -webkit-transform: translate3d(0, 20px, 0);
+          transform: translate3d(0, 20px, 0);
+}
+.projects__item--out-of-range-after:nth-child(4n - 2) {
+  -webkit-transform: translate3d(0, 25px, 0);
+          transform: translate3d(0, 25px, 0);
+}
+.projects__item--out-of-range-after:nth-child(4n - 3) {
+  -webkit-transform: translate3d(0, 30px, 0);
+          transform: translate3d(0, 30px, 0);
 }
 .projects__work {
   display: block;
+  height: 100%;
 }
 .projects__pict {
   width: 100%;

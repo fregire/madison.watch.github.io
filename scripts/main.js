@@ -33,33 +33,32 @@ $(document).ready(function(){
 	}
 
 	var projects = document.querySelectorAll(".projects__item");
-	var scrollCoords = 0;
+	var windowHeight = screen.height;
+	var projectPosition = '';
 
 	window.addEventListener("scroll", function(){
-		var vectorLength = document.documentElement.scrollTop - scrollCoords;
-		scrollCoords = document.documentElement.scrollTop;
+		for(var i = 0; i < projects.length; i++){
+			var bottomBorder = projects[i].getBoundingClientRect().bottom;
+			var topBorder = projects[i].getBoundingClientRect().top;
 
-		if(vectorLength > 0){
-			for(var i = 0; i < projects.length; i++){
-				if(isVisibleFromTop(projects[i])){
-					projects[i].classList.remove("projects__item--out-of-range", "projects__item--out-of-range-from-bottom");
-				} else {
-					projects[i].classList.remove("projects__item--out-of-range", "projects__item--out-of-range-from-bottom");
-					projects[i].classList.add("projects__item--out-of-range");
-				}
+			if(bottomBorder < 60){
+				projectPosition = 'before';
+			} else if(topBorder > windowHeight - 100){
+				projectPosition = 'after';
+			} else {
+				projectPosition = '';
 			}
-		} else {
-			for(var i = 0; i < projects.length; i++){
-				if(isVisibleFromBottom(projects[i])){
-					projects[i].classList.remove("projects__item--out-of-range-from-bottom", "projects__item--out-of-range");
-				} else {
-					projects[i].classList.remove("projects__item--out-of-range", "projects__item--out-of-range-from-bottom");
-					projects[i].classList.add("projects__item--out-of-range-from-bottom");
-				}
+
+			if(projectPosition === 'after'){
+				projects[i].classList.add("projects__item--out-of-range-after");
+			} else if(projectPosition === 'before'){
+				projects[i].classList.add("projects__item--out-of-range-before");
+			} else {
+				projects[i].classList.remove("projects__item--out-of-range-after", "projects__item--out-of-range-before");
 			}
 		}
 	});
 
-	// Табы для страницы портфолио
+
 	
 });
