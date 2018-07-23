@@ -1,7 +1,7 @@
 (function(){
-	var slider = document.querySelector(".tabs__links");
-	var sliderWrapper = document.querySelector(".tabs__slider-wrapper");
-	var links = document.querySelectorAll(".tabs__link");
+	var slider = document.querySelector(".js-category .category__items");
+	var sliderWrapper = document.querySelector(".js-category .category__inner");
+	var links = document.querySelectorAll(".js-category .category__item");
 	var contentTabs = document.querySelectorAll(".tabs__content");
 	var btnNext = document.querySelector(".tabs__arrow--next");
 	var btnPrev = document.querySelector(".tabs__arrow--prev");
