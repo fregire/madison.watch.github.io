@@ -901,25 +901,28 @@ footer,
   position: absolute;
   top: 13px;
   font-size: 13px;
+  color: #808080;
 }
 .posts__headline {
   margin-bottom: 10px;
   min-height: 50px;
   padding-top: 10px;
   font-size: 16px;
+  color: #000;
 }
 .posts__intro {
   display: block;
   max-height: 200px;
   font-size: 13px;
   text-decoration: none;
-  color: #787878;
+  color: #808080;
   line-height: 1.5;
   text-align: justify;
   overflow-y: hidden;
 }
 .posts__intro:hover,
 a.page-numbers:hover {
+  color: #555555;
   text-decoration: underline;
 }
 .navigation {
