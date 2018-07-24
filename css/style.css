@@ -689,7 +689,7 @@ footer,
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin: 0 auto;
+  margin: 30px auto;
   display: none;
   padding: 0;
   list-style: none;
@@ -711,6 +711,7 @@ footer,
   width: 270px;
   min-height: 400px;
   padding: 4px;
+  margin-bottom: 30px;
   background-color: #fff;
   -webkit-transition: all 200ms;
   -o-transition: all 200ms;
