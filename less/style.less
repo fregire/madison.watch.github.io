@@ -1018,7 +1018,7 @@ footer,
 .posts {
 	padding-top: 10px;
 
-	background-color: #fff;
+	background-color: #F6F4F4;
 }
 
 .posts__inner {
@@ -1029,7 +1029,9 @@ footer,
 	display: flex;
 	flex-wrap: wrap;
 	max-width: 1170px;
-	margin: 0 auto;
+	margin: 20px auto;
+
+	background-color: #fff;
 }
 
 .posts__item {
@@ -1040,6 +1042,14 @@ footer,
 	border-right: 1px solid #cfcfcf;
 	border-bottom: 1px solid #cfcfcf;
 	border-left: 1px solid #cfcfcf;
+}
+
+.posts__item:nth-child(3n) {
+	border-right: none;
+}
+
+.posts__item:nth-child(1n) {
+	border-left: none;
 }
 
 .posts__item:nth-child(7),
