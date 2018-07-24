@@ -906,13 +906,11 @@ footer,
 
 
 
-/* Dividing */
-.js-category .category__inner {
-	background-color: #fff;
-	overflow: hidden;
+/* Block - category */
+.category__inner {
+	padding: 10px 0;
 }
 
-.category__links,
 .category__content {
 	padding: 0;
 	list-style: none;
@@ -922,6 +920,7 @@ footer,
 .category__items {
 	height: 160px;
 	display: flex;
+	justify-content: space-between;
 	padding-top: 20px;
 	padding-left: 0;
 
@@ -932,8 +931,7 @@ footer,
 
 
 .category__item {
-	width: 292px;
-
+	width: 230px;
 	flex-shrink: 0;
 
 	text-align: center;
@@ -941,12 +939,9 @@ footer,
 	transition: all 400ms;
 }
 
-.category__item--size-sm {
-	width: 20%;
-}
 
-.category__item--size-sm .category__icon {
-	width: 50px;
+.category__item--size-percent {
+	width: 20%;
 }
 
 .category__item:hover {
@@ -1006,14 +1001,16 @@ footer,
 	transition: opacity 400ms;
 }
 
-.category__text-icon {
-	position: absolute;
-	top: 50%;
-	left: 40%;
-	transform: translate(-50%, -50%);
+.js-slider.category .category__inner {
+	overflow: hidden;
+}
 
-	font-size: 35px;
-	font-family: "Montserrat";
+.js-slider.category .category__items {
+	justify-content: flex-start;
+}
+
+.js-tabs.category {
+	background-color: #fff;
 }
 
 /** Страница - публикации **/

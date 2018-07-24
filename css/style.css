@@ -772,12 +772,10 @@ footer,
   font-weight: 500;
   color: #121212;
 }
-/* Dividing */
-.js-category .category__inner {
-  background-color: #fff;
-  overflow: hidden;
+/* Block - category */
+.category__inner {
+  padding: 10px 0;
 }
-.category__links,
 .category__content {
   padding: 0;
   list-style: none;
@@ -787,6 +785,9 @@ footer,
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   padding-top: 20px;
   padding-left: 0;
   -webkit-transform: translate(0, 0);
@@ -795,7 +796,7 @@ footer,
   list-style: none;
 }
 .category__item {
-  width: 292px;
+  width: 230px;
   -ms-flex-negative: 0;
       flex-shrink: 0;
   text-align: center;
@@ -803,11 +804,8 @@ footer,
   -o-transition: all 400ms;
   transition: all 400ms;
 }
-.category__item--size-sm {
+.category__item--size-percent {
   width: 20%;
-}
-.category__item--size-sm .category__icon {
-  width: 50px;
 }
 .category__item:hover {
   color: #e83a85;
@@ -858,15 +856,16 @@ footer,
   -o-transition: opacity 400ms;
   transition: opacity 400ms;
 }
-.category__text-icon {
-  position: absolute;
-  top: 50%;
-  left: 40%;
-  -webkit-transform: translate(-50%, -50%);
-      -ms-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  font-size: 35px;
-  font-family: "Montserrat";
+.js-slider.category .category__inner {
+  overflow: hidden;
+}
+.js-slider.category .category__items {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+.js-tabs.category {
+  background-color: #fff;
 }
 /** Страница - публикации **/
 /* Block - posts */
