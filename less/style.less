@@ -49,6 +49,7 @@ footer,
 	font-size: 30px;
 	color: #191919;
 	font-weight: 500;
+	line-height: 1;
 }
 
 .btn {
@@ -352,6 +353,7 @@ footer,
 
 /* Block - slider-arrow */
 .slider-arrow {
+	display: block;
 	width: 24px;
 	height: 24px;
 
@@ -1144,4 +1146,75 @@ a.page-numbers:hover  {
 .nav-links {
 	width: 100px;
 	margin: 0 auto;
+}
+
+
+/** Страница - Проект **/
+.project {
+	position: relative;
+
+	background-color: #fff;
+}
+
+.project__inner {
+	max-width: 1200px;
+	padding: 10px 15px;
+	margin: 0 auto;
+}
+
+.project__photo {
+	height: 525px;
+}
+
+.project__arrow {
+	position: absolute;
+	top: 260px;
+}
+
+.project__arrow.slider-arrow--next {
+	right: -16px;
+}
+
+.project__arrow.slider-arrow--prev {
+	left: -16px;
+}
+
+.project__content {
+	margin-top: 50px;
+
+	text-align: center;
+}
+
+.project__content:nth-child(2),
+.project__content:nth-child(3) {
+	max-width: 700px;
+
+	text-align: left;
+}
+
+.project__text {
+	margin-top: 18px;
+
+	font-size: 14px;
+}
+
+.project__headline {
+	color: #191919;
+	font-weight: 500;
+	font-size: 18px;
+	font-family: "Montserrat", Arial, sans-serif;
+}
+
+.project__poster {
+	text-align: center;
+}
+
+.project__poster-text {
+	max-width: 320px;
+	margin: 0 auto;
+
+	line-height: 1;
+	color: #191919;
+	font-weight: 600;
+	font-size: 14px;
 }
