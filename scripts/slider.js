@@ -51,12 +51,11 @@
 		});
 	}
 
-	sliderWrapper.addEventListener("mouseenter", onSliderMouseenter);
+	//sliderWrapper.addEventListener("mouseenter", onSliderMouseenter);
 
 	for(var i = 0; i < links.length; i++){
 		links[i].addEventListener("click", function(){
 			var category = this.getAttribute("data-cat");
-			currentSlide = parseInt(this.getAttribute("data-index"));
 
 
 			clearClass(links, 'tabs__link--active');	
@@ -64,11 +63,6 @@
 
 			this.classList.add("tabs__link--active");
 			document.querySelector(".tabs__content[data-cat='" + category + "']").classList.add("tabs__content--active");
-			sliderWrapper.removeEventListener("mousemove", onSliderMousemove);
-
-			setTimeout(function(){
-				sliderWrapper.addEventListener("mousemove", onSliderMousemove);
-			}, 1000);
 		});
 	}
 })();

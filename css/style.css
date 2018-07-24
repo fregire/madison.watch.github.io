@@ -944,7 +944,7 @@ a.page-numbers:hover {
   margin-left: -5px;
   width: 18px;
   height: 16px;
-  background-image: url(../img/next_icon.jpg);
+  background-image: url(../img/next-page_icon.jpg);
   background-size: cover;
 }
 .nav-links {
