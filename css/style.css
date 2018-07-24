@@ -80,6 +80,13 @@ footer,
 .input--size-all {
   width: 100%;
 }
+.link-page {
+  display: block;
+  margin-top: 25px;
+}
+.link-page a {
+  color: #fff;
+}
 /* Block - page-header */
 .page-header {
   position: fixed;
