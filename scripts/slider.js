@@ -7,10 +7,17 @@
 	var btnPrev = document.querySelector(".tabs__arrow--prev");
 	var ITEM_WIDTH = catItems[0].offsetWidth;
 	var VISIBLE_SLIDES = 5;
-	var MAX_TRANSLATE_X = -((catItems.length - VISIBLE_SLIDES) * ITEM_WIDTH);
+	var MAX_TRANSLATE_X;
 	var MIN_TRANSLATE_X = 0;
 	var oldX = 0;
 	var shiftCoords = 0;
+	
+	if(sliderWrapper){
+		MAX_TRANSLATE_X = -(catItems[catItems.length - 1].getBoundingClientRect().right - 
+								sliderWrapper.offsetWidth - 
+								sliderWrapper.getBoundingClientRect().left);		
+	}
+
 
 	var clearClass = function(elems, elemClass){
 		for(var i = 0; i < elems.length; i++) {
@@ -52,11 +59,11 @@
 			document.removeEventListener("mousemove", onSliderMousemove);
 		});
 	}
-	
+
 	if(sliderWrapper){
 		sliderWrapper.addEventListener("mouseenter", onSliderMouseenter);
 	}
-	
+
 	for(var i = 0; i < catItems.length; i++){
 		catItems[i].addEventListener("click", function(){
 			var category = this.getAttribute("data-cat");

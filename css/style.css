@@ -683,13 +683,12 @@ footer,
   max-width: 1170px;
 }
 .tabs__content {
-  max-width: 1200px;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin: 30px auto;
+  margin: 30px 0;
   display: none;
   padding: 0;
   list-style: none;
