@@ -868,9 +868,12 @@ footer,
 }
 /** Страница - публикации **/
 /* Block - posts */
+.posts {
+  padding-top: 10px;
+  background-color: #fff;
+}
 .posts__inner {
   padding-bottom: 50px;
-  background-color: #fff;
 }
 .posts__items {
   display: -webkit-box;
@@ -878,6 +881,8 @@ footer,
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  max-width: 1170px;
+  margin: 0 auto;
 }
 .posts__item {
   position: relative;
@@ -885,6 +890,7 @@ footer,
   padding: 23px 15px 23px 23px;
   border-right: 1px solid #cfcfcf;
   border-bottom: 1px solid #cfcfcf;
+  border-left: 1px solid #cfcfcf;
 }
 .posts__item:nth-child(7),
 .posts__item:nth-child(8),
