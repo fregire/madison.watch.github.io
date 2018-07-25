@@ -1076,3 +1076,57 @@ a.page-numbers:hover {
 .similar__headline {
   font-weight: 600;
 }
+/** Страница - Контакты **/
+/* Block - contact */
+.contact {
+  padding-top: 10px;
+  background-color: #f5f4f4;
+}
+.contact__inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 80px 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+/* Block - contact-info */
+.contact-info {
+  width: 500px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+.contact-info__text {
+  max-width: 390px;
+  margin-top: 40px;
+  margin-bottom: 50px;
+}
+.contact-info__items {
+  padding: 0;
+  max-width: 280px;
+  list-style: none;
+}
+.contact-info__item {
+  margin-bottom: 10px;
+}
+.contact-info__name {
+  color: #000;
+  font-weight: 900;
+}
+.contact-info__address {
+  display: inline;
+  font-style: normal;
+}
+/* Block - map */
+.map {
+  background-color: #fff;
+}
+.map__inner {
+  max-width: 1200px;
+  padding: 70px 15px;
+  margin: 0 auto;
+}
+/* Block - google-map */
+.google-map {
+  height: 467px;
+}
