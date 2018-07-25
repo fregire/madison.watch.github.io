@@ -1217,6 +1217,12 @@ a.page-numbers:hover  {
 	padding-bottom: 135px;
 
 	text-align: center;
+	/* 
+	   Убрать отступы между inline-block
+	   элементами, чтобы картинки по 50% вместились
+	   в один ряд letter-spacing
+	*/
+	letter-spacing: -0.3em;
 }
 
 .project__poster-text {
@@ -1227,12 +1233,15 @@ a.page-numbers:hover  {
 	color: #191919;
 	font-weight: 600;
 	font-size: 14px;
+	letter-spacing: normal;
 }
 
 .project__poster-photo {
-	display: block;
+	display: inline-block;
+	vertical-align: top;
 	margin-top: 20px;
-	width: 100%;
+	width: 50%;
+	max-height: 700px;
 	height: auto;
 }
 
