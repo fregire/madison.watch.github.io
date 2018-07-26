@@ -55,8 +55,10 @@ footer,
 .btn:hover {
   cursor: pointer;
 }
-.btn--theme-send {
+.btn--size-md {
   width: 190px;
+}
+.btn--theme-send {
   height: 40px;
   font-weight: 500;
   font-size: 13px;
@@ -1129,4 +1131,106 @@ a.page-numbers:hover {
 /* Block - google-map */
 .google-map {
   height: 467px;
+}
+/** Страница - Услуги **/
+/* Block - present */
+.present {
+  background-color: #D7D7D7;
+}
+.present__inner {
+  max-width: 700px;
+  padding: 0 15px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 160px;
+}
+.present__form {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.present__btn {
+  width: 320px;
+  text-transform: none;
+}
+/* Block - services */
+.services {
+  padding-top: 10px;
+  background-color: #fff;
+}
+.services__inner {
+  padding: 0 15px;
+  margin: 0 auto;
+}
+.services__content {
+  max-width: 780px;
+  margin: 0 auto;
+}
+.services__list {
+  max-width: 600px;
+  margin-left: auto;
+  margin-bottom: 0;
+  padding: 0;
+  list-style: none;
+}
+.services__item {
+  position: relative;
+  padding-left: 60px;
+  min-height: 200px;
+}
+.services__icon {
+  position: absolute;
+  top: -35px;
+  left: -45px;
+  width: 90px;
+  height: 90px;
+  display: block;
+  border-radius: 50%;
+}
+.services__item:before {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 2px;
+  content: "";
+  display: block;
+  background-color: #cd3375;
+}
+.services__headline {
+  position: absolute;
+  top: 0;
+  left: -300px;
+  margin: 0;
+  font-size: 22px;
+  text-transform: uppercase;
+  color: #191919;
+  font-weight: 500;
+  letter-spacing: 2px;
+}
+.services__descr-headline {
+  margin-bottom: 10px;
+  font-size: 19px;
+  color: #191919;
+  font-weight: 500;
+}
+.services__item-list {
+  padding: 0;
+  font-size: 14px;
+  list-style: none;
+}
+.services__item:last-child:before {
+  display: none;
 }
