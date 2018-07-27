@@ -1412,8 +1412,9 @@ a.page-numbers:hover  {
 
 .services__icon {
 	position: absolute;
-	top: -35px;
-	left: -45px;
+	top: 0;
+	left: 0;
+	transform: translate(-50%, -50%);
 
 
 	width: 90px;
@@ -1421,6 +1422,16 @@ a.page-numbers:hover  {
 	display: block;
 
 	border-radius: 50%;
+	background-color: #C72E70;
+}
+
+.services__icon img {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+
+	max-width: 80px;
 }
 
 .services__item:before {
