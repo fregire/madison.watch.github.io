@@ -1197,8 +1197,8 @@ a.page-numbers:hover {
   -webkit-transform: translate(-50%, -50%);
       -ms-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  width: 90px;
-  height: 90px;
+  width: 80px;
+  height: 80px;
   display: block;
   border-radius: 50%;
   background-color: #C72E70;
@@ -1210,7 +1210,7 @@ a.page-numbers:hover {
   -webkit-transform: translate(-50%, -50%);
       -ms-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  max-width: 80px;
+  max-width: 70px;
 }
 .services__item:before {
   position: absolute;
