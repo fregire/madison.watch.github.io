@@ -10,6 +10,7 @@
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/fonts.css">
 	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/media.css">
 </head>
 <body>
 	<header class="page-header">
@@ -18,8 +19,8 @@
 			<a href="#" class="logo">
 				<img src="img/Без-имени-1.png" alt="">
 			</a>
-			<nav class="page-nav">
-				<h2 class="visually-hidden">Навигация по сайту</h2>
+			<nav class="page-nav" aria-label="Основное меню сайта">
+				<button class="page-nav__phone-toggler" aria-label="Раскрыть меню"></button>
 				<ul class="page-nav__list">
 					<li class="current">
 						<a href="#">Главная</a>
@@ -80,6 +81,7 @@
 					</div>
 				</li>
 			</ul>
+			<div class="bg-line"></div>
 		</section>
 		<section class="about">
 			<div class="about__content content">
@@ -335,8 +337,7 @@
 				<a href="#" class="logo">
 					<img src="img/logo_footer.png" alt="">
 				</a>
-				<nav class="page-nav">
-					<h2 class="visually-hidden">Навигация по сайту</h2>
+				<nav class="page-nav" aria-label="Основное меню сайта">
 					<ul class="page-nav__list">
 						<li>
 							<a href="#">Главная</a>
@@ -412,7 +413,7 @@
 					</p>
 					<h2><a class="politic__link" href="#">Политика конфеденциальности</a></h2>
 				</div>
-				<div class="address">
+				<div class="page-footer__address address">
 					<a class="address__faq" href="#">Задать вопрос</a>
 					<div class="address__content">
 						<address class="address__item">123100, Москва, Пресненская набережная, 12, офис 82, Moscow City.</address>

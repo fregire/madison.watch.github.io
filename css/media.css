@@ -1,0 +1,157 @@
+@media screen and (max-width: 1100px) {
+  /* Block - page-nav */
+  .page-nav__list li {
+    padding: 0 20px;
+  }
+  /* Block - projects */
+  .projects__item {
+    height: 230px;
+  }
+}
+@media screen and (max-width: 960px) {
+  /* Block - page-nav */
+  .page-nav__list li {
+    padding: 0 10px;
+  }
+  /* Block - address */
+  .page-footer__address {
+    margin-left: auto;
+    margin-top: 20px;
+  }
+  /* Block - politics */
+  .politic {
+    max-width: 550px;
+  }
+  /* Block - projects */
+  .projects__item {
+    height: 200px;
+  }
+}
+@media screen and (max-width: 840px) {
+  /* Block - page-nav */
+  .page-nav {
+    position: relative;
+    height: 60px;
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1;
+  }
+  .page-nav__list {
+    position: absolute;
+    top: 0;
+    left: -200px;
+    width: 145px;
+    padding-top: 60px;
+    height: 1000px;
+    background-color: #282727;
+    -webkit-box-shadow: 4px 0px 5px 0px rgba(0, 0, 0, 0.38);
+            box-shadow: 4px 0px 5px 0px rgba(0, 0, 0, 0.38);
+    -webkit-transition: all 400ms;
+    -o-transition: all 400ms;
+    transition: all 400ms;
+  }
+  .page-nav__list--opened {
+    left: -16px;
+  }
+  .page-nav__list li {
+    display: block;
+    padding-right: 0;
+    padding-left: 15px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border: none;
+  }
+  .page-nav__list li:first-child {
+    display: inline-block !important;
+  }
+  .page-nav__list li:first-child a {
+    display: block;
+    height: 15px;
+    width: 100px;
+    background-image: url(../img/Без-имени-1.png);
+    background-size: 100px;
+    background-repeat: no-repeat;
+    color: transparent;
+  }
+  .page-footer .page-nav {
+    display: none;
+  }
+  .page-nav__phone-toggler {
+    display: block;
+  }
+}
+@media screen and (max-width: 800px) {
+  /* Block - page-footer */
+  .page-footer__address {
+    margin-left: 0;
+    margin-right: auto;
+    text-align: left;
+  }
+  .address__faq:after {
+    right: auto;
+  }
+  /* Block - projects */
+  .projects__item {
+    width: 50%;
+    height: 290px;
+  }
+  /* Block - features */
+  .features__list {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .features__item {
+    margin: 20px 10px;
+  }
+  /* Block - category */
+  .category__items {
+    min-height: 160px;
+    height: auto;
+  }
+  .category__item--size-percent {
+    width: 25%;
+  }
+}
+@media screen and (max-width: 690px) {
+  /* Block - input */
+  .input--size-sm {
+    width: 100%;
+  }
+  /* Block - category */
+  .category__item--size-percent {
+    width: 33%;
+  }
+  /* Block - main-slider */
+  .main-slider {
+    padding: 0;
+    background-color: #fff;
+  }
+  .main-slider .slick-dots {
+    top: 260px;
+    bottom: auto;
+  }
+  .main-slider__item {
+    margin-bottom: 300px;
+    height: 300px;
+  }
+  .main-slider__content {
+    top: 120%;
+    -webkit-transform: none;
+        -ms-transform: none;
+            transform: none;
+    text-align: center;
+  }
+  .main-slider__headline {
+    color: #191919;
+  }
+  .main-slider__text {
+    color: #787878;
+  }
+  .main-slider .bg-line {
+    display: block;
+  }
+  /* Block - lang */
+  .lang {
+    font-size: 18px;
+  }
+}

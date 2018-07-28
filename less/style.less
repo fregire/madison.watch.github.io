@@ -135,6 +135,7 @@ footer,
 /* Block - page-nav */
 .page-nav__list {
 	padding: 0;
+	margin: 0;
 
 	font-size: 12px;
 
@@ -167,6 +168,25 @@ footer,
 	color: #2d6aed;
 }
 
+.page-nav__phone-toggler {
+	position: relative;
+	top: 50%;
+	transform: translate(0, -50%);
+
+	width: 40px;
+	height: 26px;
+	display: none;
+
+	outline: none;
+	border: none;
+	background-color: transparent;
+	background-image: url(../img/burger_icon.png);
+	-webkit-background-size: cover;
+	background-size: cover;
+
+	z-index: 10;
+}
+
 /* Block - main-nav */
 .page-navbar {
 	font-family: "Montserrat", Arial, sans-serif;
@@ -186,7 +206,6 @@ footer,
 /* Block - lang */
 .lang {
 	display: inline-block;
-	height: 18px;
 	padding-left: 1px;
 	
 	color: #fff;
@@ -238,6 +257,7 @@ footer,
 	margin-top: 50px;
 	display: flex;
 	justify-content: space-between;
+	flex-wrap: wrap;
 }
 /* Block - social */
 .social__list {
@@ -287,6 +307,8 @@ footer,
 /* Block - address */
 .address {
 	max-width: 260px;
+	display: flex;
+	flex-direction: column;
 
 	text-align: right;
 }
@@ -392,6 +414,8 @@ footer,
 
 /* Block - main-slider */
 .main-slider {
+	padding: 5px 15px;
+
 	color: #fff;
 
 	background-color: #f4f4f4;
@@ -400,7 +424,7 @@ footer,
 .main-slider__list {
 	position: relative;
 	max-width: 1200px;
-	padding: 5px 15px;
+	padding: 0;
 	margin: 0 auto;
 
 	list-style: none;
@@ -491,13 +515,16 @@ footer,
 }
 
 .main-slider__arrow--prev {
-	left: 0px;
+	left: -12px;
 }
 
 .main-slider__arrow--next {
-	right: 0px;
+	right: -12px;
 }
 
+.main-slider .bg-line {
+	display: none;
+}
 /* Block - about */
 .about {
 	background-color: #f4f4f4;
@@ -557,6 +584,7 @@ footer,
 	margin: 0 auto;
 	display: flex;
 	justify-content: space-between;
+	flex-wrap: wrap;
 
 	font-family: "Montserrat", Arial, sans-serif;
 	color: #191919;
@@ -762,9 +790,9 @@ footer,
 }
 
 .feedback__inner {
-	max-width: 675px;
-	padding-right: auto;
-	padding-left: auto;
+	max-width: 705px;
+	padding-right: 15px;
+	padding-left: 15px;
 	padding-bottom: 105px;
 	margin: 0 auto;
 }
@@ -937,6 +965,7 @@ footer,
 	height: 160px;
 	display: flex;
 	justify-content: space-between;
+	flex-wrap: wrap;
 	padding-top: 20px;
 	padding-left: 0;
 
