@@ -45,10 +45,11 @@ $(document).ready(function(){
 	var windowHeight = screen.height;
 
 	var headerHeight = document.querySelector(".page-header").offsetHeight;
+	var windowWidth = screen.width;
 
 	var projectPosition = '';
 
-	if(windowHeight > 900){
+	if(windowWidth > 900){
 		window.addEventListener("scroll", function(){
 			for(var i = 0; i < projects.length; i++){
 				var bottomBorder = projects[i].getBoundingClientRect().bottom;
