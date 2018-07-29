@@ -23,24 +23,6 @@ $(document).ready(function(){
 		$(this).toggleClass("content__text--expanded");
 	});
 
-	var windowHeight = document.documentElement.clientHeight;
-
-	var isVisibleFromTop = function(elem){
-		var coords = elem.getBoundingClientRect();
-		
-		var topVisible = coords.top < 700 && coords.top < windowHeight;
-
-		return topVisible;
-	}
-
-	var isVisibleFromBottom = function(elem){
-		var coords = elem.getBoundingClientRect();
-
-		var bottomVisible = coords.bottom < 20  && coords.bottom < windowHeight;
-
-		return bottomVisible;
-	}
-
 	var projects = document.querySelectorAll(".projects__item");
 	var windowHeight = screen.height;
 

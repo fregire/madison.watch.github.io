@@ -5,26 +5,25 @@
 	<title>Madison</title>
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 
-	<link rel="stylesheet" href="css/slick-theme.css">
-	<link rel="stylesheet" href="css/slick.css">
-	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/libs.css">
 	<link rel="stylesheet" href="css/fonts.css">
 	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/media.css">
 </head>
 <body>
 	<header class="page-header">
 		<h1 class="visually-hidden">Название страницы</h1>
 		<div class="page-header__inner page-navbar">
-			<a href="#" class="logo">
-				<img src="img/Без-имени-1.png" alt="">
+			<a href="#" class="page-header__logo logo" aria-label="Логотип - ссылка на главную страницу">
+				<img src="img/Без-имени-1.png" alt="Madison" width="171" height="29">
 			</a>
-			<nav class="page-nav">
-				<h2 class="visually-hidden">Навигация по сайту</h2>
+			<nav class="page-nav" aria-label="Основное меню сайта">
+				<button class="page-nav__phone-toggler" aria-label="Раскрыть меню"></button>
 				<ul class="page-nav__list">
 					<li>
 						<a href="#">Главная</a>
 					</li>
-					<li>
+					<li class="current">
 						<a href="#">Услуги</a>
 					</li>
 					<li>
@@ -36,9 +35,10 @@
 					<li>
 						<a href="#">Статьи</a>
 					</li>
-					<li class="current">
+					<li>
 						<a href="#">Контакты</a>
 					</li>
+
 				</ul>
 			</nav>
 			<div class="page-navbar__right-side">
@@ -147,8 +147,7 @@
 				<a href="#" class="logo">
 					<img src="img/logo_footer.png" alt="">
 				</a>
-				<nav class="page-nav">
-					<h2 class="visually-hidden">Навигация по сайту</h2>
+				<nav class="page-nav" aria-label="Основное меню сайта">
 					<ul class="page-nav__list">
 						<li>
 							<a href="#">Главная</a>
@@ -156,7 +155,7 @@
 						<li>
 							<a href="#">Услуги</a>
 						</li>
-						<li>
+						<li class="current">
 							<a href="#">Портфолио</a>
 						</li>
 						<li>
@@ -165,7 +164,7 @@
 						<li>
 							<a href="#">Статьи</a>
 						</li>
-						<li class="current">
+						<li>
 							<a href="#">Контакты</a>
 						</li>
 					</ul>
@@ -184,46 +183,46 @@
 					<ul class="social__list">
 						<li class="social__item">
 							<a href="#" class="social__link" aria-label="Соцсеть">
-								<img class="social__icon" src="img/facebook_icon.png" alt="">
-								<img class="social__icon-hover" src="img/facebook_icon_hover.png" alt="">
+								<img class="social__icon" src="img/facebook_icon.png" alt="Fb">
+								<img class="social__icon-hover" src="img/facebook_icon_hover.png" alt="Fb">
 							</a>
 						</li>
 						<li class="social__item">
 							<a href="#" class="social__link" aria-label="Соцсеть">
-								<img class="social__icon" src="img/instagram_icon.png" alt="">
-								<img class="social__icon-hover" src="img/instagram_icon_hover.png" alt="">
+								<img class="social__icon" src="img/instagram_icon.png" alt="Inst">
+								<img class="social__icon-hover" src="img/instagram_icon_hover.png" alt="Inst">
 							</a>
 						</li>
 						<li class="social__item">
 							<a href="#" class="social__link" aria-label="Соцсеть">
-								<img class="social__icon" src="img/telegram_icon.png" alt="">
-								<img class="social__icon-hover" src="img/telegram_icon_hover.png" alt="">
+								<img class="social__icon" src="img/whatsapp_icon.png" alt="WhatsApp">
+								<img class="social__icon-hover" src="img/whatsapp_icon_hover.png" alt="WhatsApp">
 							</a>
 						</li>
 						<li class="social__item">
 							<a href="#" class="social__link" aria-label="Соцсеть">
-								<img class="social__icon" src="img/whatsapp_icon.png" alt="">
-								<img class="social__icon-hover" src="img/whatsapp_icon_hover.png" alt="">
+								<img class="social__icon" src="img/telegram_icon.png" alt="Tg">
+								<img class="social__icon-hover" src="img/telegram_icon_hover.png" alt="Tg">
 							</a>
 						</li>
 						<li class="social__item">
 							<a href="#" class="social__link" aria-label="Соцсеть">
-								<img class="social__icon" src="img/viber_icon.png" alt="">
-								<img class="social__icon-hover" src="img/viber_icon_hover.png" alt="">
+								<img class="social__icon" src="img/yt_icon.png" alt="YouTube">
 							</a>
-						</li>	
+						</li>
 						<li class="link-page">
 							<a target="_blank" href="http://www.madisontmb.com/">Старый сайт</a>
 						</li>						
 					</ul>
 				</div>
-				<div class="politic">
+
+				<div class="page-footer__politic politic">
 					<p class="politic__text">
 						Сайт«BOX71.RеU» использует файлы «cookie» с целью персонализации сервисов и повышения удобства пользования веб-сайтом. «Cookie» представляют собой небольшие файлы, содержащие информацию о предыдущих посещениях веб-сайта. Если вы не хотите использовать файлы «cookie», измените настройки браузера.
 					</p>
 					<h2><a class="politic__link" href="#">Политика конфеденциальности</a></h2>
 				</div>
-				<div class="address">
+				<div class="page-footer__address address">
 					<a class="address__faq" href="#">Задать вопрос</a>
 					<div class="address__content">
 						<address class="address__item">123100, Москва, Пресненская набережная, 12, офис 82, Moscow City.</address>
@@ -236,7 +235,6 @@
 	</footer>
 	<script src="scripts/jquery.min.js"></script>	
 	<script src="scripts/slick.min.js"></script>	
-	<script src="scripts/anime.min.js"></script>
 	<script src="scripts/main.js"></script>	
 	<script src="scripts/slider.js"></script>
 </body>

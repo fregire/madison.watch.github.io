@@ -98,6 +98,7 @@ footer,
       -ms-transform: translate(-50%, 0);
           transform: translate(-50%, 0);
   width: 100%;
+  background-color: #191919;
   background-image: url(../img/header_bg.png);
   background-size: cover;
   z-index: 20;
@@ -553,6 +554,7 @@ footer,
   position: relative;
   width: 25%;
   height: 255px;
+  background-color: #191919;
   overflow: hidden;
   -webkit-transition: -webkit-transform 1s ease;
   transition: -webkit-transform 1s ease;
@@ -933,6 +935,10 @@ footer,
 }
 .js-tabs.category {
   background-color: #fff;
+}
+.js-tabs .category__items {
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
 }
 /** Страница - публикации **/
 /* Block - posts */
