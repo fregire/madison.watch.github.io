@@ -462,3 +462,8 @@
     height: 260px;
   }
 }
+@media screen and (min-width: 600px) {
+  .similar__more {
+    display: none;
+  }
+}
