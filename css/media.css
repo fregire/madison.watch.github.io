@@ -477,4 +477,7 @@
   .similar__more {
     display: none;
   }
+  .page-footer__bottom-content .social:nth-child(2) .link-page {
+    display: none;
+  }
 }
