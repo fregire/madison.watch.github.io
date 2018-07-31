@@ -20,6 +20,10 @@ body {
   word-wrap: break-word;
   background: url(../img/page_bg.png);
 }
+body,
+.page-header {
+  min-width: 320px;
+}
 section,
 header,
 footer,
