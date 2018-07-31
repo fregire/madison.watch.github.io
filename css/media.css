@@ -377,7 +377,11 @@
   }
   /* Block - logo */
   .logo img {
-    width: 80%;
+    width: 95%;
+    height: auto;
+  }
+  .page-header__logo {
+    margin-left: 5px;
   }
   /* Block - page-navbar */
   .page-navbar__lang {
@@ -429,10 +433,6 @@
     width: 90%;
     height: 300px;
     margin: 0 auto;
-  }
-  /* Block - page-header */
-  .page-header__logo {
-    display: none;
   }
   .project__content:nth-child(2) {
     margin-top: -60px;
