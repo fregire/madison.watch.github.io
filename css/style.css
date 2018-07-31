@@ -733,6 +733,7 @@ footer,
       -ms-transform: scale(1.1);
           transform: scale(1.1);
 }
+/* Block - more */
 .projects__more {
   margin-top: 30px;
   font-family: "Montserrat", Arial, sans-serif;
@@ -1152,6 +1153,15 @@ a.page-numbers:hover {
 }
 .similar__headline {
   font-weight: 600;
+}
+.similar__more {
+  margin: 0 auto;
+  display: block;
+  font-family: "Montserrat", "Open Sans", Arial, sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  border: none;
+  background-color: transparent;
 }
 /** Страница - Контакты **/
 /* Block - contact */
