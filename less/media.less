@@ -438,6 +438,21 @@
 }
 
 @media screen and (max-width: 480px){
+	/* Block - page-header */
+	.page-header .phone {
+		display: none;
+	}
+	.page-header__logo {
+		margin-left: 30px;
+	}
+	.page-header__logo img {
+		width: 70%;
+		margin: 0 auto;
+	}
+	/* Block - logo */
+	.logo img{
+		height: auto;
+	}
 	/* Block - projects */
 	.projects__item {
 		height: 200px;
@@ -454,15 +469,6 @@
 		margin: 0 auto;
 	}
 
-	/* Block - logo */
-	.logo img{
-		width: 80%;
-		height: auto;
-	}
-	.page-header__logo {
-		margin-left: 30px;
-	}
-
 	/* Block - page-navbar */
 	.page-navbar__lang {
 		margin-right: 10px;
@@ -470,7 +476,7 @@
 
 	/* Block - link-page */
 	.link-page {
-		margin-top: 50px;
+		display: none;
 	}
 
 	/* Block - for */
@@ -493,18 +499,41 @@
 	}
 
 	/* Block - social */
+	.social__list {
+		max-width: 100%;
+	}
 	.social__item {
 		margin-top: 0;
-		width: 30px;
+		width: 35px;
+	}
+
+	/* Block - page-footer */
+	.page-footer .logo,
+	.page-footer .lang {
+		display: none;
+	}
+
+	.page-footer__bottom-content {
+		margin-top: 0;
+	}
+
+	.page-footer__address {
+		margin-top: 0;
+	}
+	.page-footer__inner {
+		padding-top: 20px;
+	}
+	.page-footer__politic {
+		top: 110px;
+	}
+
+	.page-footer .phone {
+		font-size: 25px;
 	}
 }
 
 @media screen and (max-width: 420px){
 	/* Block - logo */
-	.logo img{
-		width: 90%;
-		height: auto;
-	}
 	.page-header__logo {
 		margin-left: 10px;
 	}
