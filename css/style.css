@@ -1180,6 +1180,16 @@ a.page-numbers:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.contact__form {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+.contact__map {
+  margin: 40px 0;
 }
 /* Block - contact-info */
 .contact-info {
@@ -1194,6 +1204,7 @@ a.page-numbers:hover {
 }
 .contact-info__items {
   padding: 0;
+  margin: 0;
   max-width: 280px;
   list-style: none;
 }
@@ -1219,7 +1230,14 @@ a.page-numbers:hover {
 }
 /* Block - google-map */
 .google-map {
-  height: 467px;
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.google-map--phone {
+  display: none;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
 }
 /** Страница - Услуги **/
 /* Block - present */

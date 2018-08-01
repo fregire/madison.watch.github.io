@@ -360,6 +360,21 @@
   .item--theme-preview .item__text-overlay {
     display: none;
   }
+  /* Block - contact */
+  .contact__form .input {
+    width: 100%;
+  }
+  /* Block - google-map */
+  .google-map--phone {
+    display: block;
+  }
+  /* Block - contact-info */
+  .contact-info {
+    width: 100%;
+  }
+  .map {
+    display: none;
+  }
 }
 @media screen and (max-width: 480px) {
   /* Block - page-header */

@@ -1394,8 +1394,16 @@ a.page-numbers:hover  {
 	margin: 0 auto;
 	padding: 80px 15px;
 	display: flex;
+	flex-wrap: wrap;
 }
 
+.contact__form {
+	flex: 1;
+}
+
+.contact__map {
+	margin: 40px 0;
+}
 /* Block - contact-info */
 .contact-info {
 	width: 500px;
@@ -1410,6 +1418,7 @@ a.page-numbers:hover  {
 
 .contact-info__items {
 	padding: 0;
+	margin: 0;
 	max-width: 280px;
 
 	list-style: none;
@@ -1441,7 +1450,14 @@ a.page-numbers:hover  {
 
 /* Block - google-map */
 .google-map {
-	height: 467px;
+	display: block;
+	width: 100%;
+	height: auto;
+}
+
+.google-map--phone {
+	display: none;
+	align-self: flex-start;
 }
 
 
