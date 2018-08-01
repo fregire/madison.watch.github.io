@@ -1382,7 +1382,7 @@ a.page-numbers:hover {
 /** Страница - Пример Новости **/
 .article {
   padding-top: 20px;
-  background-color: #fff;
+  background-color: #f5f4f4;
 }
 .article__inner {
   max-width: 1200px;
@@ -1395,10 +1395,11 @@ a.page-numbers:hover {
       flex-wrap: wrap;
 }
 .article__content {
-  margin-right: 50px;
+  margin-right: 70px;
 }
 .article__headline {
   margin-bottom: 20px;
+  line-height: 1.3;
 }
 .article__img {
   width: 100%;
