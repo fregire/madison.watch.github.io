@@ -23,7 +23,7 @@
 					<li>
 						<a href="#">Главная</a>
 					</li>
-					<li>
+					<li class="current">
 						<a href="#">Услуги</a>
 					</li>
 					<li>
@@ -35,7 +35,7 @@
 					<li>
 						<a href="#">Статьи</a>
 					</li>
-					<li class="current">
+					<li>
 						<a href="#">Контакты</a>
 					</li>
 
@@ -51,45 +51,93 @@
 		</div>
 	</header>
 	<main class="page-main">
-		<section class="contact">
+		<section class="services">
 			<div class="bg-line"></div>
-			<div class="contact__inner">
-				<div class="contact-info">
-					<h2 class="contact-info__headline headline">Контактная информация:</h2>
-					<div class="contact-info__text">
-						<p>Брендинговое агентство Madison TMB это 
-						профессиональный коллектив единомышленников
-						с многолетним опытом работы в брендинге в России </p>
-					</div>
-					<ul class="contact-info__items">
-						<li class="contact-info__item">
-							<span class="contact-info__name">Address:</span>
-							<address class="contact-info__address">123100, Москва, Пресненская набережная, 12,офис 82, Moscow City.</address>
-						</li>
-						<li class="contact-info__item">
-							<span class="contact-info__name">Телефон:</span>
-							<address class="contact-info__address">+7 (495) 374-7972</address>
-						</li>
-						<li class="contact-info__item">
-							<span class="contact-info__name">Email:</span>
-							<address class="contact-info__address">mail@madisontmb.com</address>
-						</li>						
-					</ul>
+			<!-- <div class="present">
+				<div class="present__inner">
+					<form action="#" class="present__form">
+						<input class="input input--size-sm" type="text" placeholder="Введите ваш E-mail">
+						<input class="btn btn--theme-send present__btn" type="submit" value="Получите презентацию на E-mail">
+					</form>
 				</div>
-				<img class="contact__map google-map google-map--phone" src="img/map_example_2.png" alt="">
-				<form action="#" class="contact__form form">
+			</div>	 -->
+			<div class="services__inner">
+				<div class="services__content content">
+					<h2 class="headline">Спектр наших услуг</h2>
+					<div class="content__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem eveniet explicabo esse repudiandae dolores aperiam, ipsum tenetur, amet sint est soluta fugiat ut aspernatur quibusdam praesentium. Labore, unde ipsa ut soluta in pariatur delectus expedita rem quibusdam eos ab dolores quo at ea facere necessitatibus sequi ad quas veritatis suscipit quam neque blanditiis. Sapiente provident suscipit deleniti obcaecati harum eos ipsam, quam quidem, repudiandae veritatis blanditiis iste voluptatem, numquam, impedit nulla illo. Laboriosam iste labore sit maiores magni vero provident minima quisquam, magnam esse architecto quaerat temporibus tenetur ad ipsam totam aperiam recusandae facere eaque. Tempora ducimus accusamus dolores, nisi.</div>
+				</div>
+				<ul class="services__list">
+					<li class="services__item">
+						<h3 class="services__headline">Брендинг</h3>	
+						<div class="services__icon">
+							<img src="img/lamp_icon.svg" width="90" height="90">
+						</div>
+						<h4 class="services__descr-headline">Концепция бренда</h4>
+						<ul class="services__item-list">
+							<li>+ аудит существующего бренда</li>
+							<li>+ разработка бренда с нуля</li>
+							<li>+ создание идеи бренда</li>
+							<li>+ ребрендинг​</li>
+						</ul>
+					</li>
+					<li class="services__item">
+						<h3 class="services__headline">Нейминг</h3>
+						<div class="services__icon">
+							<img src="img/speaker_icon.svg" width="90" height="90">
+						</div>
+						<h4 class="services__descr-headline">Вербальные атрибуты бренда</h4>
+						<ul class="services__item-list">
+							<li>+ разработка названия</li>
+							<li>+ ​создание названия под регистрацию товарного знака​</li>
+							<li>+ разработка​ слогана / дефинитора / дескриптора​</li>
+						</ul>
+					</li>
+					<li class="services__item">
+						<h3 class="services__headline">Дизайн</h3>
+						<div class="services__icon">
+							<img src="img/palette_icon.svg" width="90" height="90">
+						</div>
+						<h4 class="services__descr-headline">Графические атрибуты бренда</h4>
+						<ul class="services__item-list">
+							<li>+ разработка логотипа и фирменного стиля</li>
+							<li>+ доработка существующего фирменного стиля / редизайн</li>
+							<li>+ создание макетов носителей фирменного стиля / полиграфии</li>
+							<li>+ разработка упаковки</li>
+							<li>+ создание презентаций </li>
+							<li>+ разработка гайдлайна / брендбука</li>
+						</ul>
+					</li>
+					<li class="services__item">
+						<h3 class="services__headline">Продвижение</h3>
+						<div class="services__icon">
+							<img src="img/target_icon.svg" width="90" height="90">
+						</div>
+						<h4 class="services__descr-headline">Развитие бренда</h4>
+						<ul class="services__item-list">
+							<li>+ разработка стратегии продвижения бренда​​</li>
+							<li>+ ​​продвижение в социальных сетях / SMM</li>
+							<li>+ ​​креатив рекламных кампаний ONLINE / OFFLINE  </li>
+							<li>+ контент-маркетинг / копирайтинг / фото- и видеопродакшн</li>
+						</ul>
+					</li>
+				</ul>
+			</div>		
+		</section>
+		<section class="feedback">
+			<div class="feedback__inner">
+				<div class="feedback__content content">
+					<h2 class="headline">Звоните или пишите нам!</h2>
+					<div class="content__text content__text--feedback">
+						Мы проконсультируем вас по любому вопросу!
+					</div>
+				</div>
+				<form action="#" class="form">
 					<input class="form__input input input--size-sm" type="text" placeholder="Ваше Имя">
 					<input class="form__input input input--size-sm" type="text" placeholder="Ваше Email">
 					<input class="form__input input input--size-all" type="text" placeholder="Ваше телефон">
 					<textarea class="form__textarea input input--size-all" name="comment" id="" cols="30" rows="10"  placeholder="Ваш комментарий"></textarea>
-					<input class="btn btn--theme-send btn--size-md" type="submit" value="Отправить">
+					<input class="form__submit btn btn--theme-send btn--size-md" type="submit" value="Отправить">
 				</form>
-			</div>
-		</section>
-		<div class="bg-line"></div>
-		<section class="map">
-			<div class="map__inner">
-				<img class="google-map google-map--desktop" src="img/map_example_2.png" alt="">
 			</div>
 		</section>
 	</main>
