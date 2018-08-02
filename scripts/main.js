@@ -19,6 +19,33 @@ $(document).ready(function(){
 					  ]
 	});
 
+	var sliderActivated;
+	if($(window).width() < 1150){
+		$(".js-tabs .category__items").slick({
+			slidesToShow: 3,
+			arrows: true,
+			nextArrow: "<button class='slider-arrow slider-arrow--next main-slider__arrow main-slider__arrow--next' aria-label='Следующий слайд'></button>",
+			prevArrow: "<button class='slider-arrow slider-arrow--prev main-slider__arrow main-slider__arrow--prev' aria-label='Предыдущий слайд'></button>",
+			responsive: [
+				{
+					breakpoint: 650,
+					settings: {
+						slidesToShow: 2
+					}
+				},
+				{
+					breakpoint: 480,
+					settings: {
+						slidesToShow: 1,
+						centerMode: true
+					}
+				}
+			]
+
+		});	
+
+	} 
+
 	$(".about__content .content__text").click(function(){
 		$(this).toggleClass("content__text--expanded");
 	});
