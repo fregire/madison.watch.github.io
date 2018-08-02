@@ -481,6 +481,21 @@
   .page-footer .phone {
     font-size: 25px;
   }
+  /* Block - posts */
+  .posts__item {
+    padding-top: 30px;
+  }
+  .posts__pre-headline {
+    top: 8px;
+    padding-right: 15px;
+  }
+  .posts__headline {
+    min-height: 10px;
+  }
+  .posts__item:nth-child(7),
+  .posts__item:nth-child(8) {
+    border-bottom-color: #cfcfcf;
+  }
 }
 @media screen and (max-width: 420px) {
   /* Block - logo */
