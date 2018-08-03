@@ -134,7 +134,7 @@
 	}
 
 	.page-nav__list li:first-child {
-		display: inline-block!important;
+		display: block!important;
 	}
 
 	.page-nav__list li:first-child a {
@@ -512,7 +512,7 @@
 	}
 	.page-header__logo img {
 		width: 70%;
-		margin-right: auto;
+		margin: 0 auto;
 	}
 	.page-header .lang {
 		display: none;
@@ -529,6 +529,21 @@
 
 	.page-nav__list--opened {
 		right: -15px;
+	}
+
+	.page-nav__list li {
+		padding-left: 0;
+		padding-right: 15px;
+
+		text-align: right;
+	}
+
+	.page-nav__list li:first-child {
+		display: block;
+	}
+
+	.page-nav__list li:first-child a {
+		margin-left: auto;
 	}
 	/* Block - logo */
 	.logo img{

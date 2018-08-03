@@ -92,6 +92,19 @@ $(document).ready(function(){
 		if(!pageNav.is(e.target) && pageNav.has(e.target).length === 0){
 			$('.page-header .page-nav__list').removeClass('page-nav__list--opened');
 		}
+	});
+
+
+	// Отправка формы 
+	var form = document.querySelector(".form");
+	var submitBtn = document.querySelector(".form .btn.btn--theme-send");
+
+	form.addEventListener("submit", function(e){
+		e.preventDefault();
+		submitBtn.disabled = true;
+
+		var xhr = new XMLHttpRequest();
+
 	})
 
 

@@ -71,6 +71,9 @@ footer,
   border: none;
   border-radius: 25px;
 }
+.btn--theme-send:disabled {
+  background-color: #e475a5;
+}
 .input {
   height: 48px;
   padding-left: 22px;
