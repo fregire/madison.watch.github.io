@@ -319,8 +319,10 @@
 					</div>
 				</div>
 				<form action="#" class="form">
-					<input class="form__input input input--size-sm" type="text" placeholder="Ваше Имя" required>
-					<input class="form__input input input--size-sm" type="email" placeholder="Ваше Email" required>
+					<div class="form__group">
+						<input class="form__input input input--size-sm" type="text" placeholder="Ваше Имя" required>
+						<input class="form__input input input--size-sm" type="email" placeholder="Ваше Email" required>		
+					</div>
 					<input class="form__input input input--size-all" type="tel" placeholder="Ваше телефон" required pattern="^[ 0-9]+$">
 					<textarea class="form__textarea input input--size-all" name="comment" id="" cols="30" rows="10"  placeholder="Ваш комментарий"></textarea>
 					<input class="form__submit btn btn--theme-send btn--size-md" type="submit" value="Отправить">

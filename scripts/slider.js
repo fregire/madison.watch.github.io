@@ -2,7 +2,7 @@
 	var slider = document.querySelector(".js-slider  .category__items");
 	var sliderWrapper = document.querySelector(".js-slider .category__inner");
 	var catItems = document.querySelectorAll(".js-tabs .category__item");
-	var contentTabs = document.querySelectorAll(".tabs__content");
+	var items = document.querySelectorAll(".items__item");
 	var btnNext = document.querySelector(".tabs__arrow--next");
 	var btnPrev = document.querySelector(".tabs__arrow--prev");
 	var ITEM_WIDTH = catItems[0].offsetWidth;
@@ -64,16 +64,4 @@
 		sliderWrapper.addEventListener("mouseenter", onSliderMouseenter);
 	}
 
-	for(var i = 0; i < catItems.length; i++){
-		catItems[i].addEventListener("click", function(){
-			var category = this.getAttribute("data-cat");
-
-
-			clearClass(catItems, 'tabs__link--active');	
-			clearClass(contentTabs, 'tabs__content--active');	
-
-			this.classList.add("tabs__link--active");
-			document.querySelector(".tabs__content[data-cat='" + category + "']").classList.add("tabs__content--active");
-		});
-	}
 })();

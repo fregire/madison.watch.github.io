@@ -95,18 +95,226 @@ $(document).ready(function(){
 	});
 
 
-	// Отправка формы 
-	var form = document.querySelector(".form");
-	var submitBtn = document.querySelector(".form .btn.btn--theme-send");
+	// Табы 
+	var $catItems = $(".category__item");
 
-	form.addEventListener("submit", function(e){
+	$($catItems).on("click", function(){
+		var category = $(this).attr("data-cat");
+		$('.items__item').addClass("items__item--hidden");
+		$('.items__item').removeClass("items__item--active");
+		$('.items__item[data-cat="' + category + '"]').addClass("items__item--active");
+	});
+
+	// Показ соцсетей и мессенджеров
+	$(".social__link").on("click", function(e){
 		e.preventDefault();
-		submitBtn.disabled = true;
+		$id = $(this).attr("data-id");
+		$(".social-tabs__text").text("Мы в");
+		$(".social-tabs__item").removeClass("social-tabs__item--active");
+		$(".social-tabs__item[data-id='" + $id + "']").addClass("social-tabs__item--active");
+	});
 
-		var xhr = new XMLHttpRequest();
 
-	})
+	// Слайдер похожих работ
+	// var slider = document.querySelector(".slider");
+	// var sliderWrapper = document.querySelector(".slider__wrapper");
+	// var sliderItems = document.querySelectorAll(".slider .items__item");
+	// var ITEM_MARGIN = 15;
+	// var MIN_TRANSLATE_X = 0;
+	// var MAX_TRANSLATE_X = -(sliderItems[sliderItems.length - 1].getBoundingClientRect().right - 
+	// 							sliderWrapper.offsetWidth - 
+	// 							sliderWrapper.getBoundingClientRect().left + ITEM_MARGIN)
+	// var shiftCoords = 0;
+	// var oldX = 0;
+
+	// var onSliderMousemove = function(e){
+	// 		var diffX = e.clientX - oldX;
+			
+	// 		if(diffX > 10){
+	// 			shiftCoords -= 18;
+	// 		} else if(diffX > 0){
+	// 			shiftCoords -= 5;
+	// 		} else if(diffX < -10){
+	// 			shiftCoords += 18
+	// 		} else if(diffX < 0){
+	// 			shiftCoords += 5;
+	// 		}
+
+	// 		if(shiftCoords >= MIN_TRANSLATE_X){
+	// 			shiftCoords = MIN_TRANSLATE_X;
+	// 		}
+	// 		if(shiftCoords <= MAX_TRANSLATE_X){
+	// 			shiftCoords = MAX_TRANSLATE_X;
+	// 		}
+
+	// 		sliderWrapper.style.transform = "translate(" + shiftCoords + "px, 0)";
+
+	// 		oldX = e.clientX;
+	// }
+	// slider.addEventListener("mouseenter", function() {
+	// 	this.addEventListener("mousemove", onSliderMousemove);
+
+	// 	this.addEventListener("mouseleave", function(){
+	// 		this.removeEventListener("mousemove", onSliderMousemove);
+	// 	})
+	// });
+
+	// $(".similar__works").slick({
+	// 	slidesToShow: 4,
+	// 	slidesToScroll: 1,
+	// 	infinite: false,
+	// 	nextArrow: "<button class='slider-arrow slider-arrow--next similar__arrow similar__arrow--next' aria-label='Следующий слайд'></button>",
+	// 	prevArrow: "<button class='slider-arrow slider-arrow--prev similar__arrow similar__arrow--prev' aria-label='Предыдущий слайд'></button>",
+
+	// });
+
+	var slider = document.querySelector(".slider__wrapper");
+	var works = document.querySelector(".slider .items");
+	var sliderWrapper = document.querySelector(".slider__wrapper");
+	var sliderItems = document.querySelectorAll(".slider .items__item");
+	var nextArrow = document.querySelector(".similar__arrow--next");
+	var prevArrow = document.querySelector(".similar__arrow--prev");
+	var ITEM_MARGIN = 15;
+	var MAX_TRANSLATE_X = 0;
+	var MIN_TRANSLATE_X = slider.getBoundingClientRect().right - sliderItems[sliderItems.length - 1].getBoundingClientRect().right - ITEM_MARGIN;
+	var oldX = 0;
+	var shiftCoords = 0;
+	var itemWidth = sliderItems[0].offsetWidth + ITEM_MARGIN;
+
+	var onSliderMousemove = function(e){
+		var diffX = e.clientX - oldX;
+
+		if(diffX > 10){
+			shiftCoords -= 27;
+		} else if(diffX > 0){
+			shiftCoords -= 5;
+		} else if(diffX < -10){
+			shiftCoords += 27;
+		} else if(diffX < 0){
+			shiftCoords += 5;
+		}
+
+		if(shiftCoords >= MAX_TRANSLATE_X){
+			shiftCoords = 0;
+		} 
+		if(shiftCoords <= MIN_TRANSLATE_X){
+			shiftCoords = MIN_TRANSLATE_X;
+		} 
+
+		works.style.transform = "translateX(" + shiftCoords + "px)";
+
+		oldX = e.clientX;
+
+	}
+
+	slider.addEventListener("mouseenter", function(e){
+		this.addEventListener("mousemove", onSliderMousemove);
+
+		this.addEventListener("mouseleave", function(){
+			this.removeEventListener("mousemove", onSliderMousemove);
+		});
+	});
+	var isHidden = false;
+	var MIN_HIDDEN_TRANSLATE = (sliderItems[0].offsetWidth + 30) * 4;
+	var firstHiddenElem;
+	// Часть, которая может быть не спрятана у первого спрятанного элемента
+	var firstHiddenElemVisiblePart;
+	var firstHiddenElemLeftCoord = 0;
+	var counterOfHiddenElems = 0;
+
+	var isHiddenInRightPart = function(elem){
+		if(elem.getBoundingClientRect().right > sliderWrapper.getBoundingClientRect().right - 15){
+			return true;
+		}
+		return false;
+	}
 
 
+	nextArrow.addEventListener("click", function(){
+		for(var i = 0; i < sliderItems.length; i++){
+			if(isHidden){
+				continue;
+			} else {
+				if(isHiddenInRightPart(sliderItems[i])){
+					isHidden = true;
+					firstHiddenElemVisiblePart = sliderItems[i].getBoundingClientRect().right  - sliderWrapper.getBoundingClientRect().right + 15;	
+					shiftCoords = shiftCoords - firstHiddenElemVisiblePart;
+					anime({
+					  targets: works,
+					  translateX: {
+					  	value: shiftCoords,
+					  	duration: 500
+					  },
+					  easing: 'easeInOutQuart'
+
+					});
+				}				
+			}
+
+			// Ищем первый элемент, который может быть спрятан частично
+			// if(isHidden){
+			// 	// Дальше ищем элементы, которые спрятаны за первым найденным
+			// 	// Чтобы затем узнать насколько сдвигать слайдер(counter умножить на ширину элемента)
+			// 	if(isHiddenInRightPart(sliderItems[i])){
+			// 		counterOfHiddenElems++;
+			// 		if(counterOfHiddenElems >= 3){
+						
+			// 		} 
+			// 	}
+			// } else {
+			// 	if(isHiddenInRightPart(sliderItems[i])){
+			// 		isHidden = true;
+			// 		firstHiddenElemLeftCoord = sliderItems[i].getBoundingClientRect().left;
+			// 		alert("hi");
+			// 	}
+			// }
+			// firstHiddenElemVisiblePart = (sliderWrapper.getBoundingClientRect().right - 15) - firstHiddenElemLeftCoord;
+
+		}
+		isHidden = false;
+	});
+
+	var isHiddenInLeftPart = function(elem, elemPrev){
+		if((elem.getBoundingClientRect().left < sliderWrapper.getBoundingClientRect().left + 15 
+			&& elem.getBoundingClientRect().right > sliderWrapper.getBoundingClientRect().left + 15)){
+			return true;
+		} else if(elem.getBoundingClientRect().left > sliderWrapper.getBoundingClientRect().left){
+			return true;
+		}
+		return false;
+	}
+
+	prevArrow.addEventListener("click", function(){
+		for(var i = 0; i < sliderItems.length; i++){
+			if(isHidden){
+
+			} else {
+				if(isHiddenInLeftPart(sliderItems[i])){
+
+					isHidden = true;
+					firstHiddenElemVisiblePart = sliderWrapper.getBoundingClientRect().left + 15 - sliderItems[i].getBoundingClientRect().left;	
+					if(firstHiddenElemVisiblePart === 0){
+						firstHiddenElemVisiblePart = 300;
+					}
+					shiftCoords = shiftCoords + firstHiddenElemVisiblePart;
+					if(shiftCoords >= 0){
+						shiftCoords = 0;
+					}
+
+
+					anime({
+					  targets: works,
+					  translateX: {
+						  	value: shiftCoords,
+						  	duration: 500
+						},
+					  easing: 'easeInOutQuart'
+					});
+				}				
+			}
+	
+		}
+		isHidden = false;
+	});
 	
 });
