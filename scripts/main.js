@@ -251,25 +251,6 @@ $(document).ready(function(){
 				}				
 			}
 
-			// Ищем первый элемент, который может быть спрятан частично
-			// if(isHidden){
-			// 	// Дальше ищем элементы, которые спрятаны за первым найденным
-			// 	// Чтобы затем узнать насколько сдвигать слайдер(counter умножить на ширину элемента)
-			// 	if(isHiddenInRightPart(sliderItems[i])){
-			// 		counterOfHiddenElems++;
-			// 		if(counterOfHiddenElems >= 3){
-						
-			// 		} 
-			// 	}
-			// } else {
-			// 	if(isHiddenInRightPart(sliderItems[i])){
-			// 		isHidden = true;
-			// 		firstHiddenElemLeftCoord = sliderItems[i].getBoundingClientRect().left;
-			// 		alert("hi");
-			// 	}
-			// }
-			// firstHiddenElemVisiblePart = (sliderWrapper.getBoundingClientRect().right - 15) - firstHiddenElemLeftCoord;
-
 		}
 		isHidden = false;
 	});
