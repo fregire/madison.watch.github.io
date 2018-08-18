@@ -45,10 +45,6 @@
   .page-nav__list li {
     padding: 0 10px;
   }
-  /* Block - politics */
-  .politic {
-    max-width: 550px;
-  }
   /* Block - projects */
   .projects__item {
     height: 200px;
@@ -86,19 +82,25 @@
   .page-nav__list {
     position: absolute;
     top: 0;
-    left: -200px;
+    -webkit-transform: translateX(-200px);
+        -ms-transform: translateX(-200px);
+            transform: translateX(-200px);
     width: 145px;
     padding-top: 60px;
     height: 1000px;
     background-color: #282727;
     -webkit-box-shadow: 4px 0px 5px 0px rgba(0, 0, 0, 0.38);
             box-shadow: 4px 0px 5px 0px rgba(0, 0, 0, 0.38);
-    -webkit-transition: all 400ms;
-    -o-transition: all 400ms;
-    transition: all 400ms;
+    -webkit-transition: -webkit-transform 400ms;
+    transition: -webkit-transform 400ms;
+    -o-transition: transform 400ms;
+    transition: transform 400ms;
+    transition: transform 400ms, -webkit-transform 400ms;
   }
   .page-nav__list--opened {
-    left: -16px;
+    -webkit-transform: translateX(-15px);
+        -ms-transform: translateX(-15px);
+            transform: translateX(-15px);
   }
   .page-nav__list li {
     display: block;
@@ -161,9 +163,6 @@
   }
 }
 @media screen and (max-width: 800px) {
-  .address__faq:after {
-    right: auto;
-  }
   /* Block - projects */
   .projects__item {
     width: 50%;
@@ -286,12 +285,6 @@
     display: none;
   }
   /* Block - social */
-  .social--footer {
-    text-align: right;
-  }
-  .social--footer .social__list {
-    margin-left: auto;
-  }
   .social--footer .social__item {
     width: 45px;
     height: 45px;
@@ -299,24 +292,6 @@
   }
   .social--footer .social__link {
     display: block;
-  }
-  /* Block - address */
-  .address__faq {
-    -webkit-box-ordinal-group: 3;
-        -ms-flex-order: 2;
-            order: 2;
-    margin-top: 50px;
-    width: 205px;
-    font-weight: 300;
-    font-size: 25px;
-    white-space: nowrap;
-  }
-  .address__faq:after {
-    width: 90%;
-  }
-  /* Block - link-page */
-  .link-page {
-    margin-top: 30px;
   }
   /* Block - project */
   .project__arrow {
@@ -412,11 +387,15 @@
             order: 2;
   }
   .page-nav__list {
-    right: -240px;
+    -webkit-transform: translateX(100px);
+        -ms-transform: translateX(100px);
+            transform: translateX(100px);
     left: auto;
   }
   .page-nav__list--opened {
-    right: -15px;
+    -webkit-transform: translate(-85px);
+        -ms-transform: translate(-85px);
+            transform: translate(-85px);
   }
   /* Block - logo */
   .logo img {
@@ -438,10 +417,6 @@
   /* Block - page-navbar */
   .page-navbar__lang {
     margin-right: 10px;
-  }
-  /* Block - link-page */
-  .link-page {
-    display: none;
   }
   /* Block - for */
   .for__content .content__text {
@@ -536,12 +511,6 @@
 }
 @media screen and (max-width: 600px) {
   /* Block - social */
-  .social--footer {
-    text-align: right;
-  }
-  .social--footer .social__list {
-    margin-left: auto;
-  }
   .social--footer .social__item {
     width: 45px;
     height: 45px;
@@ -583,5 +552,64 @@
 @media screen and (max-width: 600px) {
   .social__tabs {
     display: none;
+  }
+}
+/* Футер */
+@media screen and (max-width: 1100px) {
+  /* Block - page-footer */
+  .page-footer__social {
+    width: 50%;
+  }
+  .page-footer__cookie,
+  .page-footer__social {
+    padding-left: 0;
+  }
+  .page-footer__cookie {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+  }
+  .page-footer__cookie:after,
+  .page-footer__address:after {
+    display: none;
+  }
+  .page-footer__politic {
+    padding-top: 15px;
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+  }
+}
+@media screen and (max-width: 960px) {
+  .copyright {
+    display: none;
+  }
+}
+@media screen and (max-width: 800px) {
+  .page-footer__cookie {
+    display: none;
+  }
+  /* Block - social */
+  .social__list {
+    max-width: 250px;
+  }
+  .social__email {
+    margin-top: 25px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .page-footer__social {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+  .social__email {
+    display: none;
+  }
+  .social__list {
+    max-width: 260px;
+  }
+  .social__item {
+    margin-right: 15px;
   }
 }
